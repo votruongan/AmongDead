@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     public bool isMoveToTarget;
     public bool isMovable;
     public TextMesh playerNameDisplay;
-    // Start is called before the first frame update
+
     public void SetPlayerInfo(PlayerInfo pInfo)
     {
         this.info = pInfo;
@@ -38,6 +38,7 @@ public class PlayerController : MonoBehaviour
         SetPlayerName(pInfo.playerName, pInfo.isImpostor);
         SetPlayerColor(ColorCodeConverter.ColorFromCode(pInfo.colorCode));
     }
+
     protected void Start()
     {
         isMovable = true;
@@ -47,25 +48,29 @@ public class PlayerController : MonoBehaviour
         rigidbody = this.GetComponent<Rigidbody2D>();
         SetPlayerColor(Color.magenta);
     }
+
     void OnCollisionEnter2D(Collision2D collisionInfo)
     {
         transform.rotation = Quaternion.identity;
     }
+
     void OnCollisionStay2D(Collision2D collisionInfo)
     {
         transform.rotation = Quaternion.identity;
     }
+
     void OnCollisionExit2D(Collision2D collisionInfo)
     {
         transform.rotation = Quaternion.identity;
     }
+
     public void SetPlayerName(string name, bool isImpostor = false)
     {
         if (playerNameDisplay == null) playerNameDisplay = this.transform.GetChild(1).gameObject.GetComponent<TextMesh>();
         playerNameDisplay.text = name;
         if (isImpostor) playerNameDisplay.color = Color.red;
     }
-    // Update is called once per frame
+    
     protected void FixedUpdate()
     {
         if (isMoveToTarget)
@@ -117,15 +122,18 @@ public class PlayerController : MonoBehaviour
     {
         displayer.ChangeColor(colorToChange, new Color(colorToChange.r - 0.2f, colorToChange.g - 0.2f, colorToChange.b - 0.2f, 1f));
     }
+
     void MoveMove()
     {
         displayer.PlayAnimation("CharacterMove");
     }
+
     public void TeleportTo(Vector3 target)
     {
         this.transform.position = target;
         return;
     }
+
     public void MoveTo(Vector3 target, bool isAutoSmooth = false)
     {
         if ((target.x - this.transform.position.x) * horizontalDir < 0f)
@@ -143,6 +151,7 @@ public class PlayerController : MonoBehaviour
         targetToMove = target;
         // Debug.Log("Player " + this.name + " Move To " + target);
     }
+
     public void MoveHorizontal(float val, int direction = 1)
     {
         MoveMove();
@@ -152,6 +161,7 @@ public class PlayerController : MonoBehaviour
         horizontalDir = direction;
         speed.x = val * direction;
     }
+
     public void MoveVertical(float val, int direction = 1)
     {
         MoveMove();

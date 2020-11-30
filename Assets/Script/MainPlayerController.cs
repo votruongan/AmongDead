@@ -41,7 +41,8 @@ public class MainPlayerController : PlayerController
     }
     public void UseObject()
     {
-        if (currentUsableObject != null) currentUsableObject.ExecUse();
+        if (currentUsableObject != null)
+            currentUsableObject.ExecUse();
 
     }
     private void Start()
