@@ -7,26 +7,23 @@ public class EnemyAI : MonoBehaviour
 {
     public Transform target;
 
-    public float speed = 200f;
+    public float speed = 400f;
     public float nextWaypointDistance = 3f;
-
+    public CharacterDisplayer displayer;
     public Transform currentTransform;
 
     Path path;
     int currentWaypoint = 0;
     bool reachedEndOfPath = false;
 
-    //PlayerController controller;
     Seeker seeker;
     Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
     {
-        //botController = GetComponent<BotPlayerController>();
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
-        //controller = GetComponent<PlayerController>();
 
         InvokeRepeating("UpdatePath", 0f, 0.5f);
     }
@@ -54,13 +51,13 @@ public class EnemyAI : MonoBehaviour
 
         if (currentWaypoint >= path.vectorPath.Count)
         {
+            displayer.PlayAnimation("CharacterIdle");
             reachedEndOfPath = true;
-            //controller.displayer.PlayAnimation("CharacterIdle");
             return;
         }
         else
         {
-            //controller.displayer.PlayAnimation("CharacterMove");
+            displayer.PlayAnimation("CharacterMove");
             reachedEndOfPath = false;
         }
 
