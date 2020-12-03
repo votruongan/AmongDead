@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Pathfinding;
 
 public class BotPlayerController : PlayerController
 {
+    AIPath aiPath;
+
     GameController parent;
 
     // Bot info
@@ -13,7 +16,6 @@ public class BotPlayerController : PlayerController
 
     // Field of view
     FieldOfView fov;
-
     Camera mainCamera;
 
     public BotPlayerController(GameController gameController, string name, bool isImposter)
@@ -35,15 +37,19 @@ public class BotPlayerController : PlayerController
     // Update is called once per frame
     void Update()
     {
-        
+        if (aiPath.desiredVelocity.x >= 0.01f)
+        {
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+        }
+        else if (aiPath.desiredVelocity.x <= -0.01f)
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
     }
 
     private void FixedUpdate()
     {
         base.FixedUpdate();
-        UpdateMainPlayerPosition();
-
-        mainCamera = Camera.main;
     }
 
     // MARK: - Set up methods
