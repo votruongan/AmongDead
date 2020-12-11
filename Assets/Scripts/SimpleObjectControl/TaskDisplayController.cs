@@ -14,11 +14,13 @@ public class TaskDisplayController : MonoBehaviour
     public int currentIndex = 0;
     public bool isActive = true;
     public List<Text> spawnedText;
+    public static TaskDisplayController instance;
     // Start is called before the first frame update
     void Start()
     {
         isActive = true;
         currentIndex = 0;
+        instance = this;
     }
     public void RemoveText(int textIndex)
     {
@@ -42,7 +44,8 @@ public class TaskDisplayController : MonoBehaviour
     {
         GameObject gO = Instantiate(styledObject, this.transform.position, Quaternion.identity, this.transform);
         spawnedText.Add(gO.GetComponent<Text>());
-        spawnedText[spawnedText.Count - 1].text = displayText + " (" + currentNumber.ToString() + "/" + limitNumber.ToString() + ")";
+        // spawnedText[spawnedText.Count - 1].text = displayText + " (" + currentNumber.ToString() + "/" + limitNumber.ToString() + ")";
+        spawnedText[spawnedText.Count - 1].text = displayText;
         spawnedText[spawnedText.Count - 1].color = textColor;
         RectTransform rt = gO.GetComponent<RectTransform>();
         rt.anchoredPosition = new Vector3(0f, textDirection * textOffset * ++currentIndex, 0f);

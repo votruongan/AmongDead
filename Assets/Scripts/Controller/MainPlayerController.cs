@@ -74,6 +74,10 @@ public class MainPlayerController : PlayerController
         {
             UseObject();
         }
+        if (Input.GetKey("f"))
+        {
+            UIController.instance.ExecKill();
+        }
         fieldOfView.SetOrigin(this.transform.position + new Vector3(0.0f, -0.2f, 0.0f));
     }
 }

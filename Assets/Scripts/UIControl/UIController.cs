@@ -9,9 +9,11 @@ public class UIController : MonoBehaviour
     private static Dictionary<string, Button> buttonsDict;
     private static Dictionary<string, int> buttonCooldownDict;
     private static Dictionary<string, Text> buttonCooldownDisplayDict;
+    public static UIController instance;
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         if (buttons == null || buttons.Count == 0)
         {
             Transform migo = GameObject.Find("TouchInputs").GetComponent<Transform>();
@@ -37,8 +39,9 @@ public class UIController : MonoBehaviour
     }
     public void ExecKill()
     {
-        buttonCooldownDict["KILL"] = 10;
+        if (!buttonsDict["KILL"].gameObject.activeInHierarchy || !buttonsDict["KILL"].interactable) return;
         buttonsDict["KILL"].interactable = false;
+        buttonCooldownDict["KILL"] = 10;
         buttonCooldownDisplayDict["KILL"].text = buttonCooldownDict["KILL"].ToString();
         buttonCooldownDisplayDict["KILL"].gameObject.SetActive(true);
         KillActionController.KillFirstPlayer();

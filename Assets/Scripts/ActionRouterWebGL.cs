@@ -70,7 +70,7 @@ public class ActionRouterWebGL : MonoBehaviour
         Debug.Log(pInfos.ToArray().Length);
         gameInfoHolder.SetPlayerInfo(pInfos);
         gameLobbyController.UpdateRoomInfo(pInfos.ToArray());
-        PanelChangeController.pccInstance.GotoPanel(2);
+        PanelChangeController.pccInstance.GotoPanel((int)MainMenuPanel.GameLobby);
         NotiPanelControl.notiPanelInstance.CloseNotification();
     }
     public void JoinRoomHandle(string h)
@@ -81,7 +81,7 @@ public class ActionRouterWebGL : MonoBehaviour
         if (dat == "true")
         {
             NotiPanelControl.notiPanelInstance.DisplayNotification("Đang xử lý");
-            PanelChangeController.pccInstance.GotoPanel(2);
+            PanelChangeController.pccInstance.GotoPanel((int)MainMenuPanel.GameLobby);
         }
 
     }

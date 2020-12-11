@@ -36,7 +36,9 @@ public class KillActionController : MonoBehaviour
     public static void KillFirstPlayer()
     {
         if (killablePlayers.Count <= 0) return;
-        Debug.Log(killablePlayers[0].gameObject.name);
+        Debug.Log("Killing: " + killablePlayers[0].gameObject.name);
+        //exec kill
+        
     }
     // public static void ExecKill()
     // {

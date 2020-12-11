@@ -3,6 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+public enum MainMenuPanel
+{
+    MainMenu,
+    SinglePlayer,
+    MultiplePlayer,
+    RoomList,
+    GameLobby
+}
+
 public class KeyValueArray
 {
     public List<KeyValuePair<string, string>> data;
@@ -18,11 +28,14 @@ public class MainMenuController : MonoBehaviour
     public ServerCommunication serverCom;
     public Text playerNameInput;
     public Text roomIdInput;
+
+
     public bool SetName()
     {
         if (playerNameInput.text.Length < 1)
         {
-            NotiPanelControl.notiPanelInstance.DisplayNotification("Mời bạn nhập tên người chơi để tiếp tục");
+        // IMPORTANT!! - make sure NotiPanel is active on start
+            NotiPanelControl.notiPanelInstance.DisplayNotification("Enter player name to continue");
             return false;
         }
         if (GameInfoHolder.gihInstance.mainPlayerInfo != null) return true;
@@ -32,13 +45,18 @@ public class MainMenuController : MonoBehaviour
         serverCom.SendRequest("SET_NAME", kva.ToArray());
         return true;
     }
+
+    public void PlayerNameGoto(int target){
+        bool r = SetName();
+        if (!r) return;
+        PanelChangeController.pccInstance.GotoPanel(target);
+    }
     public void FindRoom()
     {
         bool r = SetName();
         if (!r) return;
-        PanelChangeController.pccInstance.NextPanel();
+        PanelChangeController.pccInstance.GotoPanel((int)MainMenuPanel.RoomList);
     }
-
     public void JoinRoom()
     {
         bool r = SetName();
@@ -50,8 +68,12 @@ public class MainMenuController : MonoBehaviour
         bool r = SetName();
         if (!r) return;
         NotiPanelControl.notiPanelInstance.DisplayNotification("Đang xử lý");
-        PanelChangeController.pccInstance.GotoPanel(2);
+        PanelChangeController.pccInstance.GotoPanel((int)MainMenuPanel.GameLobby);
         StartCoroutine("ExecCreateRoom");
+    
+    }
+    public void GotoPanel(MainMenuPanel target){
+        PanelChangeController.pccInstance.GotoPanel((int) target);
     }
     IEnumerator ExecCreateRoom()
     {
