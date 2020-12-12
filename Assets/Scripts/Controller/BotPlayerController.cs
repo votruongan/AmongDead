@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Pathfinding;
 
 public class BotPlayerController : PlayerController
 {
-    public GameController parent;
+    AIPath aiPath;
+
+    GameController parent;
 
     // Bot info
     PlayerInfo playerInfo;
@@ -13,7 +16,6 @@ public class BotPlayerController : PlayerController
 
     // Field of view
     FieldOfView fov;
-
     Camera mainCamera;
 
     public BotPlayerController(GameController gameController, string name, bool isImposter)
@@ -27,26 +29,27 @@ public class BotPlayerController : PlayerController
     void Start()
     {
         base.Start();
-        // SetPlayerName(this.name, this.playerInfo.isImpostor);
-        // SetPlayerInfo(this.playerInfo);
+        SetPlayerName(this.name, this.playerInfo.isImpostor);
+        SetPlayerInfo(this.playerInfo);
         mainCamera = Camera.main;
-        mainPlayerInfo  = new PlayerInfo();
-        if (parent == null)
-            parent = GameObject.Find("CONTROLLERS").GetComponent<GameController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (aiPath.desiredVelocity.x >= 0.01f)
+        {
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+        }
+        else if (aiPath.desiredVelocity.x <= -0.01f)
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
     }
 
     private void FixedUpdate()
     {
         base.FixedUpdate();
-        UpdateMainPlayerPosition();
-
-        mainCamera = Camera.main;
     }
 
     // MARK: - Set up methods
@@ -60,8 +63,8 @@ public class BotPlayerController : PlayerController
 
     private void UpdateMainPlayerPosition()
     {
-        mainPlayerInfo.positionX = this.parent.mainPlayer.transform.position.x;
-        mainPlayerInfo.positionY = this.parent.mainPlayer.transform.position.x;
+        mainPlayerInfo.positionX = this.parent.mainPlayer.info.positionX;
+        mainPlayerInfo.positionY = this.parent.mainPlayer.info.positionY;
     }
 
     private bool IsMainPlayerInView()

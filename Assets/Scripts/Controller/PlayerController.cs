@@ -7,6 +7,7 @@ public class PlayerInfo
     public int index;
     public string playerId;
     public string playerName;
+    public bool isBot;
     public bool isImpostor;
     public float positionX;
     public float positionY;

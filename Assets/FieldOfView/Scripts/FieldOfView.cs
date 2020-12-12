@@ -1,19 +1,6 @@
-﻿/* 
-    ------------------- Code Monkey -------------------
-
-    Thank you for downloading this package
-    I hope you find it useful in your projects
-    If you have any questions let me know
-    Cheers!
-
-               unitycodemonkey.com
-    --------------------------------------------------
- */
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using CodeMonkey.Utils;
 
 public class FieldOfView : MonoBehaviour
 {
@@ -39,10 +26,30 @@ public class FieldOfView : MonoBehaviour
         origin = Vector3.zero;
         inSights = new HashSet<VisibleInsight>();
     }
-    void FixedUpdate()
-    {
+    
+        public static Vector3 GetVectorFromAngle(float angle) {
+            // angle = 0 -> 360
+            float angleRad = angle * (Mathf.PI/180f);
+            return new Vector3(Mathf.Cos(angleRad), Mathf.Sin(angleRad));
+        }
 
-    }
+        public static float GetAngleFromVectorFloat(Vector3 dir) {
+            dir = dir.normalized;
+            float n = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            if (n < 0) n += 360;
+
+            return n;
+        }
+
+        public static int GetAngleFromVector(Vector3 dir) {
+            dir = dir.normalized;
+            float n = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            if (n < 0) n += 360;
+            int angle = Mathf.RoundToInt(n);
+
+            return angle;
+        }
+
     private void Update()
     {
         float angle = startingAngle;
@@ -64,18 +71,18 @@ public class FieldOfView : MonoBehaviour
         {
             // origin = this.transform.position;
             // Debug.Log(origin);
-            RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, UtilsClass.GetVectorFromAngle(angle), viewDistance, layerMask);
-            RaycastHit2D[] sightHit2D = Physics2D.RaycastAll(origin, UtilsClass.GetVectorFromAngle(angle), viewDistance, inSightMask);
+            RaycastHit2D raycastHit2D = Physics2D.Raycast(origin, GetVectorFromAngle(angle), viewDistance, layerMask);
+            RaycastHit2D[] sightHit2D = Physics2D.RaycastAll(origin, GetVectorFromAngle(angle), viewDistance, inSightMask);
             bool execAddSight = sightHit2D != null && sightHit2D.Length > 0;
             if (raycastHit2D.collider == null)
             {
                 // No hit
-                vertex = origin + UtilsClass.GetVectorFromAngle(angle) * viewDistance;
+                vertex = origin + GetVectorFromAngle(angle) * viewDistance;
             }
             else
             {
                 // Hit object
-                // Debug.Log(raycastHit2D.point.ToString() + origin.ToString());
+                // Debug.Log("Hitted " + raycastHit2D.point.ToString() + " From " + origin.ToString());
                 vertex = raycastHit2D.point;
             }
             if (execAddSight)
@@ -96,7 +103,7 @@ public class FieldOfView : MonoBehaviour
             }
             // Debug.DrawLine(origin, vertex);
             vertices[vertexIndex] = vertex;
-            vertices[rayCount + vertexIndex] = origin + UtilsClass.GetVectorFromAngle(angle) * fogDistance;
+            vertices[rayCount + vertexIndex] = origin + GetVectorFromAngle(angle) * fogDistance;
             if (vertexIndex > 0)
             {
                 triangles[triangleIndex + 0] = rayCount + vertexIndex - 1;
@@ -153,7 +160,7 @@ public class FieldOfView : MonoBehaviour
 
     public void SetAimDirection(Vector3 aimDirection)
     {
-        startingAngle = UtilsClass.GetAngleFromVectorFloat(aimDirection) + fov / 2f;
+        startingAngle = GetAngleFromVectorFloat(aimDirection) + fov / 2f;
     }
 
     public void SetFoV(float fov)

@@ -9,6 +9,8 @@ public class UsableObjectController : MonoBehaviour
     // Start is called before the first frame update
     public GameObject[] prefabUsabeObjects;
     public List<GameObject> createdUsableObjects;
+    public static GameObject[] allUsableObject;
+    public static UsableObjectController instance;
     void Start()
     {
         if (usableMountPositions == null || usableMountPositions.Count == 0)
@@ -21,6 +23,8 @@ public class UsableObjectController : MonoBehaviour
                 isMountUsed.Add(false);
             }
         }
+        allUsableObject = GameObject.FindGameObjectsWithTag("UsableObject");
+        this.instance = this;
         createdUsableObjects = new List<GameObject>();
     }
     public void MountObject(int objectIndex, int mountIndex)

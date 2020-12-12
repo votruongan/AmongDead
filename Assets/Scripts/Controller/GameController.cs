@@ -6,7 +6,8 @@ public class GameController : MonoBehaviour
 {
     public MainPlayerController mainPlayer;
     public List<PlayerController> playerControllers;
-    public GameObject prefabGamePlayer;
+    public GameObject prefabRealPlayer;
+    public GameObject prefabBotPlayer;
     public bool isMultiplayer = false;
     public int gameMode = 1;
 
@@ -35,6 +36,7 @@ public class GameController : MonoBehaviour
             deg = i * dd;
             pi.positionX = rootX + radiusX * Mathf.Cos(deg);
             pi.positionY =  rootY + radiusY * Mathf.Sin(deg);
+            pi.isBot = true;
             pis.Add(pi);
         }
         return pis.ToArray();
@@ -77,8 +79,15 @@ public class GameController : MonoBehaviour
                 mainPlayer.SetPlayerInfo(pi);
                 continue;
             }
-            go = Instantiate(prefabGamePlayer);
-            playerControllers.Add(go.GetComponent<PlayerController>());
+            if (pi.isBot){
+                go = Instantiate(prefabBotPlayer);
+                playerControllers.Add(go.GetComponent<EnemyAI>());
+                ((EnemyAI) playerControllers[playerControllers.Count - 1]).target = mainPlayer.transform;
+            }
+            else{
+                go = Instantiate(prefabRealPlayer);
+                playerControllers.Add(go.GetComponent<PlayerController>());
+            }
             playerControllers[playerControllers.Count - 1].SetPlayerInfo(pi);            
         }
     }
