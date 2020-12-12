@@ -807,3 +807,1102 @@
   </Target>
   -->
 </Project>
+=======
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{8c3581d3-ad6b-79d4-dfc0-d875bff66aa3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_4_16;UNITY_2019_4;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+     <Compile Include="Assets\FieldOfView\Scripts\FieldOfView.cs" />
+     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
+     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+     <Compile Include="Assets\MilkShake\Scripts\IShakeParameters.cs" />
+     <Compile Include="Assets\MilkShake\Scripts\ShakeInstance.cs" />
+     <Compile Include="Assets\MilkShake\Scripts\ShakeParameters.cs" />
+     <Compile Include="Assets\MilkShake\Scripts\ShakePreset.cs" />
+     <Compile Include="Assets\MilkShake\Scripts\ShakeResult.cs" />
+     <Compile Include="Assets\MilkShake\Scripts\ShakeState.cs" />
+     <Compile Include="Assets\MilkShake\Scripts\ShakeType.cs" />
+     <Compile Include="Assets\MilkShake\Scripts\Shaker.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
+     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
+     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
+     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
+     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\Animator\AnimatorControllerTools.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\BitUtilities\BitUtilities.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\CatmullRom\CatmullRomLerp.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\Compression\Enums\SerializationFlags.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\Compression\LiteCrusher\LiteCrusher.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\Compression\LiteCrusher\LiteFloatCrusher.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\Compression\LiteCrusher\LiteIntCrusher.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\Compression\NormCompress\NormCompress.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\EditorTools\DisableFieldAttribute.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\EditorTools\DrawerUtils.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\EditorTools\InspectorUtils.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\EditorTools\SolidTextures.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\EditorTools\VersaMaskAttribute.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\EditorTools\VersaMaskDrawer.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\FastBitMask\FastBitMask128.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\FastBitMask\FastBitMask64.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\Attributes\PackObjectAttribute.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\Attributes\SyncHalfFloatAttribute.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\Attributes\SyncIntAttribute.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\Attributes\SyncListAttribute.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\Attributes\SyncRangedAttribute.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\Attributes\SyncVarAttribute.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\Attributes\SyncVarBaseAttribute.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\CodeGen\GenerateTypeExtension.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\CodeGen\Helpers\TypeHelpers.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\CodeGen\TypeCatalogue.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\CodeGen\TypeInfo.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\CodeGen\TypeInfoDict.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\Enums\PackObjectEnums.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\Interfaces\PackFieldInterfaces.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\PackObjectDatabase.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\PackObjectSettings.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\PackObject\_GeneratedPackExtensions\Pack_TestPackObject.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\SettingsScriptableObject\SettingsScriptableObject.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\ElementCrusher.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\Extensions\FloatCrusherExtensions.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\FloatCrushDrawer.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\QuatCrusher.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\RigidbodyCrusher.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\RigidbodyCrusherDrawer.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\Structs\CompressedElement.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\Structs\CompressedMatrix.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\Structs\CompressedMatrixRB.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\Structs\CompressedQuat.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\Structs\Element.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\Structs\IncludedAxisEnum.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\Structs\Matrix.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\Structs\MatrixRB.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\TransformCrusher.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\TransformCrusherDrawer.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\Utilities\CollectBounds.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\WorldBounds\WorldBounds.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\WorldBounds\WorldBoundsGroup.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\WorldBounds\WorldBoundsSelectAttribute.cs" />
+     <Compile Include="Assets\Photon\PhotonUtilities\TransformCrusher\WorldBounds\WorldBoundsSettings.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Assistants\AnimatorAssists.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Assistants\AssistHelpers.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Assistants\LauncherAssists.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Assistants\MountAssists.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Assistants\NetObjectAssists.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Assistants\PickupAssists.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Assistants\StateAssists.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Assistants\SyncTransformAssists.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Assistants\TriggerAssists.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Assistants\UtilityAssists.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\AutoOwnerComponentEnable.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\AutoOwnerGameObjEnable.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\ContactManager.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\ContactProjectile.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\ContactReactorBase.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\ContactTrigger.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\Interfaces\IConsumable.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\Interfaces\IContactReactor.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\Interfaces\IContactSystem.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\Interfaces\IContactTrigger.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\Interfaces\IOnContactEvent.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\Interfaces\ISyncContact.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\Structs\ContactEvent.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncContact.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncInventory\Assistants\InventorySystemAssists.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncInventory\BasicInventory.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncInventory\Interfaces\IInventorySystem.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncInventory\Interfaces\IInventoryable.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncInventory\InventoryContactReactors.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncInventory\InventoryContactReactorsT.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncInventory\InventoryT.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncShoot\Assistants\WeaponAssists.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncShoot\Interfaces\IProjectile.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncShoot\Interfaces\IProjectileCannon.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncShoot\Projectile.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncShoot\ProjectileHelpers.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncShoot\SyncCannon.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncShoot\SyncContactScan.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncShoot\SyncShootBase.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\Assistants\VitalsAssists.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\Enums\ConsumptionEnums.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\Interfaces\IVitalsContactReactor.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\Interfaces\IVitalsSystem.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\OwnedIVitals.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\SyncVitals.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\UI\VitalUI.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\UI\VitalUIBase.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\UI\VitalsUISrcBase.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\VitalsContactReactor.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\VitalsSystem\DataTypes\VitalData.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\VitalsSystem\DataTypes\VitalDefinition.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\VitalsSystem\DataTypes\VitalNameType.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\VitalsSystem\Interfaces\IOnVitalChange.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\VitalsSystem\Vital.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\ContactSystems\SyncVitals\VitalsSystem\Vitals.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\DataMonitor\SimpleDataMonitor.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\EnableOnNetObjReady.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Enums\FrameArrival.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Mount\Mount.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Mount\MountMaskSelector.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Mount\MountSelector.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Mount\MountSettings.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Mount\MountThrow.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\Mount\MountsManager.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncAnimator\Classes\ParameterDefaults.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncAnimator\Classes\ParameterSettings.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncAnimator\Enums\ParameterEnums.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncAnimator\Structs\AnimPassThru.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncAnimator\SyncAnimator.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncMover\SyncAdditiveMover.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncMover\SyncMoverBase.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncMover\SyncNodeMover.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncOculus\Assistants\OculusAssist.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncOculus\AutoDisableOculusObjects.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncOculus\SimpleOVRDebug.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncOculus\SimpleOVRGrabbable.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncOculus\SimpleOVRGrabber.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncOculus\SimpleOVRInputSync.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncOculus\SimpleOculusAutomation.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\AutoMountHitscan.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\Enums\ObjState.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\Interfaces\IMountable.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\Interfaces\IOnStateChange.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\Interfaces\IOnTeleport.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\ItemStateLogic.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\MarkerNameType.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\MountSwitcher.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\OnStateChangeKinematic.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\OnStateChangeToggle.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\StateChangeInfo.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\StateReactors.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\StateSyncHelpers.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\SyncOwner.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\SyncSpawnTimer.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\SyncState.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncState\TeleportMarker.cs" />
+     <Compile Include="Assets\Photon\Simple\Components\SyncTransform\SyncTransform.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\Constants\ApplyOrderConstants.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\Enums\Enums.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\Extensions\NetObjColliderExt.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\GenericHitscan\GenericHitscan.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\GenericHitscan\HitscanComponent.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\GenericHitscan\HitscanDefinition.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\Interfaces\IPackObjOnReady.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\Interfaces\NetObjInterfaces.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\Interfaces\SyncObjInterfaces.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\NetComponent.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\NetMaster\DoubleTime.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\NetMaster\Interfaces\NetMasterInterfaces.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\NetMaster\NetMaster.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\NetMaster\NetMasterCallbacks.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\NetMaster\NetMasterLate.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\NetObject.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\Structs\FrameBase.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\SyncObject.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\SyncObjectTFrame.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\TickEngineSettings.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\TickManager\ConnectionTickOffsets.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\TickManager\TickManager.cs" />
+     <Compile Include="Assets\Photon\Simple\Core\Utilities\GetNestedComponentUtils.cs" />
+     <Compile Include="Assets\Photon\Simple\Example\Scripts\LowFrameRate.cs" />
+     <Compile Include="Assets\Photon\Simple\Example\Scripts\OwnerGUI.cs" />
+     <Compile Include="Assets\Photon\Simple\Example\Scripts\SimulateHealth.cs" />
+     <Compile Include="Assets\Photon\Simple\Example\Scripts\SuperBasicController.cs" />
+     <Compile Include="Assets\Photon\Simple\Example\Scripts\TakeOwnership.cs" />
+     <Compile Include="Assets\Photon\Simple\Example\Scripts\TestPackObject.cs" />
+     <Compile Include="Assets\Photon\Simple\Example\Scripts\TickMover.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Callbacks\CallbackUtilities.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Camera\AutoZoom.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Collider\CollideType.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Component\CopyComponent.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\ContactGroups\ContactGroupAssign.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\ContactGroups\ContactGroupMaskSelector.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\ContactGroups\ContactGroupSelector.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\ContactGroups\ContactGroupSettings.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\ContactGroups\ContactGroupValues.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\ContactGroups\Interfaces\IContactGroupMask.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Debugging\UIConsole.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Example\BasicController.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GUITools\CustomMaskEditors\MaskLogic.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GUITools\EditorUtils.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GUITools\EnumMaskAttribute.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GUITools\HeaderEditor.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GUITools\HideNextXAttribute.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GUITools\InspectorWidgets.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GUITools\NameTypeDrawer.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GUITools\ShowIfInterfaceAttribute.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GUITools\ValueTypeAttribute.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GhostWorld\Enums\Realm.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GhostWorld\Ghost.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GhostWorld\GhostCollider.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GhostWorld\GhostComponent.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GhostWorld\GhostWorld.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GhostWorld\Haunted.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GhostWorld\HauntedStatic.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GhostWorld\Interfaces\IHauntedComponent.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\GhostWorld\Interfaces\IIncludeInGhost.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Networking\AutoDestroyUnspawned.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Networking\AutoDestroyWrongNetLib.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Networking\AutoLayerByAuthority.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Networking\GenericSpawnPoint.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Networking\Interfaces\IHasNetworkID.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Networking\Interfaces\NetworkHitInerfaces.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Networking\NetAdapters\NetMsgCallbacks.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Networking\NetAdapters\NetMsgSends.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Networking\NetworkHit.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Networking\NetworkHits.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\Pooling\Pool.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\SimpleDocsURLS.cs" />
+     <Compile Include="Assets\Photon\Simple\Utilities\SmartVars\SmartVars.cs" />
+     <Compile Include="Assets\Recyclable Scroll Rect\Demo\Scripts\DemoCell.cs" />
+     <Compile Include="Assets\Recyclable Scroll Rect\Demo\Scripts\RecyclableScrollerDemo.cs" />
+     <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\Interfaces\ICell.cs" />
+     <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\Interfaces\IRecyclableScrollRectDataSource.cs" />
+     <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\RecyclableScrollRect.cs" />
+     <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\Recycling System\HorizontalRecyclingSystem.cs" />
+     <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\Recycling System\RecyclingSystem.cs" />
+     <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\Recycling System\VerticalRecyclingSystem.cs" />
+     <Compile Include="Assets\Recyclable Scroll Rect\Main\Scripts\Utils\UIExtension.cs" />
+     <Compile Include="Assets\Scripts\ActionRouterWebGL.cs" />
+     <Compile Include="Assets\Scripts\Base\BaseController.cs" />
+     <Compile Include="Assets\Scripts\Base\ColorCodeConverter.cs" />
+     <Compile Include="Assets\Scripts\Base\CommunicationUtils.cs" />
+     <Compile Include="Assets\Scripts\Base\WebSocketClient.cs" />
+     <Compile Include="Assets\Scripts\Controller\BotPlayerController.cs" />
+     <Compile Include="Assets\Scripts\Controller\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Controller\GameController.cs" />
+     <Compile Include="Assets\Scripts\Controller\GameInfoHolder.cs" />
+     <Compile Include="Assets\Scripts\Controller\MainPlayerController.cs" />
+     <Compile Include="Assets\Scripts\Controller\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\ImmortalInfoHolder.cs" />
+     <Compile Include="Assets\Scripts\KillActionController.cs" />
+     <Compile Include="Assets\Scripts\Network\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Network\Launcher.cs" />
+     <Compile Include="Assets\Scripts\ObjectController\DoorsController.cs" />
+     <Compile Include="Assets\Scripts\ObjectController\ObjectsController.cs" />
+     <Compile Include="Assets\Scripts\ObjectController\UsableObjectController.cs" />
+     <Compile Include="Assets\Scripts\ObjectController\UsableObjectInfo.cs" />
+     <Compile Include="Assets\Scripts\ObjectController\VentController.cs" />
+     <Compile Include="Assets\Scripts\PostProcessing\PostProcess.cs" />
+     <Compile Include="Assets\Scripts\ServerCommunication.cs" />
+     <Compile Include="Assets\Scripts\SimpleObjectControl\CharacterDisplayer.cs" />
+     <Compile Include="Assets\Scripts\SimpleObjectControl\ColliderController.cs" />
+     <Compile Include="Assets\Scripts\SimpleObjectControl\ImageColorChanger.cs" />
+     <Compile Include="Assets\Scripts\SimpleObjectControl\TaskDisplayController.cs" />
+     <Compile Include="Assets\Scripts\SimpleObjectControl\VisibleInsight.cs" />
+     <Compile Include="Assets\Scripts\StaticText\StaticTextBase.cs" />
+     <Compile Include="Assets\Scripts\TestScript.cs" />
+     <Compile Include="Assets\Scripts\UIControl\ButtonDisplayController.cs" />
+     <Compile Include="Assets\Scripts\UIControl\ColorPickController.cs" />
+     <Compile Include="Assets\Scripts\UIControl\GameLobby\PlayerInfoRow.cs" />
+     <Compile Include="Assets\Scripts\UIControl\GameLobbyController.cs" />
+     <Compile Include="Assets\Scripts\UIControl\MainMenuController.cs" />
+     <Compile Include="Assets\Scripts\UIControl\MenuPanelControl.cs" />
+     <Compile Include="Assets\Scripts\UIControl\NotiPanelControl.cs" />
+     <Compile Include="Assets\Scripts\UIControl\PanelChangeController.cs" />
+     <Compile Include="Assets\Scripts\UIControl\RoomListCell.cs" />
+     <Compile Include="Assets\Scripts\UIControl\RoomListScrollList.cs" />
+     <Compile Include="Assets\Scripts\UIControl\UIController.cs" />
+     <Compile Include="Assets\Scripts\UIControl\VentDirectionController.cs" />
+     <Compile Include="Assets\WebSocket\WebSocket.cs" />
+     <Compile Include="Assets\_\Base\BaseScripts\CharacterAimHandler.cs" />
+     <Compile Include="Assets\_\Base\BaseScripts\CharacterPositionMovementHandler.cs" />
+     <Compile Include="Assets\_\Base\BaseScripts\CharacterSwordHandler.cs" />
+     <Compile Include="Assets\_\Base\BaseScripts\CharacterWaypointsHandler.cs" />
+     <Compile Include="Assets\_\Base\BaseScripts\Enemy.cs" />
+     <Compile Include="Assets\_\Base\BaseScripts\EnemyHandler.cs" />
+     <Compile Include="Assets\_\Base\BaseScripts\Enemy_Base.cs" />
+     <Compile Include="Assets\_\Base\BaseScripts\FlyingBody.cs" />
+     <Compile Include="Assets\_\Base\BaseScripts\GameHandler_Setup.cs" />
+     <Compile Include="Assets\_\Base\BaseScripts\HealthSystem.cs" />
+     <Compile Include="Assets\_\Base\BaseScripts\PlayerPositionMovement.cs" />
+     <Compile Include="Assets\_\Base\BaseScripts\PlayerPunch.cs" />
+     <Compile Include="Assets\_\Base\BaseScripts\PlayerSword.cs" />
+     <Compile Include="Assets\_\Base\BaseScripts\Player_Base.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\Assets.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\CMDebug.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\MonoBehaviours\CameraFollow.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\MonoBehaviours\CameraFollowSetup.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\MonoBehaviours\ComponentActions.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\MonoBehaviours\PositionRendererSorter.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\Button_Sprite.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\Button_UI.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\FunctionPeriodic.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\FunctionTimer.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\FunctionUpdater.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UI_Bar.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UI_BarMultiple.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UI_Sprite.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\UtilsClass.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\World_Bar.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\World_Mesh.cs" />
+     <Compile Include="Assets\_\Stuff\CodeMonkey\Utils\World_Sprite.cs" />
+     <Compile Include="Assets\_\Stuff\GridPathfinding\BinaryTree.cs" />
+     <Compile Include="Assets\_\Stuff\GridPathfinding\GridPathfinding.cs" />
+     <Compile Include="Assets\_\Stuff\GridPathfinding\LastMoveTo.cs" />
+     <Compile Include="Assets\_\Stuff\GridPathfinding\MapPos.cs" />
+     <Compile Include="Assets\_\Stuff\GridPathfinding\PathNode.cs" />
+     <Compile Include="Assets\_\Stuff\GridPathfinding\PathQueue.cs" />
+     <Compile Include="Assets\_\Stuff\GridPathfinding\PathRoute.cs" />
+     <Compile Include="Assets\_\Stuff\GridPathfinding\UnitMovement.cs" />
+     <Compile Include="Assets\_\Stuff\Scripts\AnimatedWalker.cs" />
+     <Compile Include="Assets\_\Stuff\Scripts\Blood_Handler.cs" />
+     <Compile Include="Assets\_\Stuff\Scripts\Dirt_Handler.cs" />
+     <Compile Include="Assets\_\Stuff\Scripts\FullscreenPlayMode.cs" />
+     <Compile Include="Assets\_\Stuff\Scripts\GameAssets.cs" />
+     <Compile Include="Assets\_\Stuff\Scripts\Generic_Mesh_Script.cs" />
+     <Compile Include="Assets\_\Stuff\Scripts\ScreenshotHandler.cs" />
+     <Compile Include="Assets\_\Stuff\Scripts\SetSpriteSorting.cs" />
+     <Compile Include="Assets\_\Stuff\Scripts\Shoot_Flash.cs" />
+     <Compile Include="Assets\_\Stuff\Scripts\Sound_Manager.cs" />
+     <Compile Include="Assets\_\Stuff\Scripts\SpriteAnimator.cs" />
+     <Compile Include="Assets\_\Stuff\Scripts\UVVectors.cs" />
+     <Compile Include="Assets\_\Stuff\Scripts\V_UnitSkeleton_Composite_Walker.cs" />
+     <Compile Include="Assets\_\Stuff\Scripts\V_UnitSkeleton_Composite_Weapon.cs" />
+     <Compile Include="Assets\_\Stuff\Scripts\WeaponTracer.cs" />
+     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_IActiveInactive.cs" />
+     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_IDestroySelf.cs" />
+     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_IHasWorldPosition.cs" />
+     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_IObjectActiveLogic.cs" />
+     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_IObjectTransform.cs" />
+     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_IObjectTransformBody.cs" />
+     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_Main.cs" />
+     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_Object.cs" />
+     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_ObjectLogic_SkeletonUpdater.cs" />
+     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_ObjectTransform.cs" />
+     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_ObjectTransformBody.cs" />
+     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_ObjectTransform_LateUpdate.cs" />
+     <Compile Include="Assets\_\Stuff\V_ObjectSystem\V_TimeScaleManager.cs" />
+     <None Include="Assets\Ciconia Studio\Shaders\Double Sided Shaders\Double Sided Transparent Diffuse Bump.shader" />
+     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
+     <None Include="Assets\Ciconia Studio\Shaders\Double Sided Shaders\Double Sided Emissive Diffuse.shader" />
+     <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
+     <None Include="Assets\Photon\PhotonUtilities\PackObject\_GeneratedPackExtensions\PackObject Extensions.txt" />
+     <None Include="Assets\Ciconia Studio\Shaders\Double Sided Shaders\Double Sided Transparent Diffuse Bump Cutout.shader" />
+     <None Include="Assets\_\Stuff\CodeMonkey\README.txt" />
+     <None Include="Assets\JsonDotNet\link.xml" />
+     <None Include="Assets\Photon\PhotonUtilities\Compression\plugins\ByteConverter.xml" />
+     <None Include="Assets\MilkShake\Documentation\Readme.txt" />
+     <None Include="Assets\Photon\PhotonUtilities\TransformCrusher\plugins\QuatCompress.xml" />
+     <None Include="Assets\MilkShake\Documentation\Simple Setup.txt" />
+     <None Include="Assets\Shader\PlayerColorChanger.shader" />
+     <None Include="Assets\Photon\PhotonUtilities\TransformCrusher\plugins\HalFloat.xml" />
+     <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
+     <None Include="Assets\Ciconia Studio\Shaders\Double Sided Shaders\Double Sided Standard Diffuse Bump.shader" />
+     <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />
+     <None Include="Assets\Photon\PhotonUtilities\TransformCrusher\plugins\FloatCrusher.xml" />
+     <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
+     <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
+     <None Include="Assets\Scripts\PostProcessing\CameraMainPosProcess.shader" />
+    <Reference Include="UnityEngine">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Assets/Photon/PhotonLibs/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ByteConverter">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Assets/Photon/PhotonUtilities/Compression/plugins/ByteConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="FloatCrusher">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Assets/Photon/PhotonUtilities/TransformCrusher/plugins/FloatCrusher.dll</HintPath>
+    </Reference>
+    <Reference Include="HalFloat">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Assets/Photon/PhotonUtilities/TransformCrusher/plugins/HalFloat.dll</HintPath>
+    </Reference>
+    <Reference Include="QuatCompress">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Assets/Photon/PhotonUtilities/TransformCrusher/plugins/QuatCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netstandard/System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+        <HintPath>D:/Archives/Programs/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>D:/__PROJECT/__GameDev/AmongDead/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
+      <Project>{18b1989e-fa4d-b7e9-a92e-57d4c1eee50b}</Project>
+      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
+      <Project>{a6d67327-66fe-39b7-be7a-e4e8da61bf9e}</Project>
+      <Name>PunDemos.DemoHubEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
+      <Project>{ff996e36-cce6-02cd-1079-43636eeefc01}</Project>
+      <Name>PunDemos.DemoSlotcarEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
+      <Project>{fe9ce3ae-4466-9c05-8dd7-e1020ec8e7e2}</Project>
+      <Name>PhotonUnityNetworking.Demos</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
+      <Project>{0cd70994-0a38-891f-62df-bf5b1d3e2484}</Project>
+      <Name>PhotonUnityNetworking.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{e69db238-27d3-ce77-a5fc-a3fdd090d2c9}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{564b2b78-f0c5-a563-ae5b-d7cb52533549}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="EmoCompressUtilsASMDEF.csproj">
+      <Project>{eb44e797-385c-09a4-1fed-460f381933e9}</Project>
+      <Name>EmoCompressUtilsASMDEF</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{e1d09fe9-59c5-fa48-02c8-4b230f594f3a}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonRealtime.csproj">
+      <Project>{78a80a2c-314d-db5b-8c93-c4b114319c8a}</Project>
+      <Name>PhotonRealtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.csproj">
+      <Project>{43b6abb6-43af-b034-5a84-e190deb953a2}</Project>
+      <Name>PhotonUnityNetworking</Name>
+    </ProjectReference>
+    <ProjectReference Include="HalfFloatASMDEF.csproj">
+      <Project>{92e04e8e-0041-60a8-1b54-c969c738dc47}</Project>
+      <Name>HalfFloatASMDEF</Name>
+    </ProjectReference>
+    <ProjectReference Include="V_Animation.csproj">
+      <Project>{2f5a3792-a89d-e80c-8beb-7749f3eb0d1f}</Project>
+      <Name>V_Animation</Name>
+    </ProjectReference>
+    <ProjectReference Include="BitpackersASMDEF.csproj">
+      <Project>{2ceea958-e886-ae5a-3356-82081aecadae}</Project>
+      <Name>BitpackersASMDEF</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonChat.csproj">
+      <Project>{a3c45099-7872-fa7e-979a-0b6b3e0e2c61}</Project>
+      <Name>PhotonChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
+      <Project>{8523520b-a57e-0548-fdca-6bf8894b196b}</Project>
+      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
+      <Project>{079eb797-0a42-c96a-cfb1-6f734fee1ca3}</Project>
+      <Name>PhotonUnityNetworking.Editor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
