@@ -18,9 +18,12 @@ public class EnemyAI : PlayerController
 
     Seeker seeker;
     Rigidbody2D rb;
-    private bool sentMoveCommand ;
+    private bool sentMoveCommand;
     private float tmpDistance;
-
+    private float lastDistance;
+    private int gameMode;
+    
+    
     // Start is called before the first frame update
     protected void Start()
     {
@@ -29,10 +32,14 @@ public class EnemyAI : PlayerController
         rb = GetComponent<Rigidbody2D>();
         sentMoveCommand = false;
         InvokeRepeating("UpdatePath", 0f, 0.5f);
+        gameMode = GameController.instance.gameMode;
+        IEnumerator coroutine = WaitAndExecute(0.0f);
+        StartCoroutine(coroutine);
     }
 
     void UpdatePath()
     {
+        if (target == null)return;
         seeker.StartPath(rb.position, target.position, OnPathComplete);
     }
 
@@ -44,6 +51,33 @@ public class EnemyAI : PlayerController
             currentWaypoint = 0;
         }
     }
+
+    void ExecScript(){
+        if (GameController.instance.isMultiplayer){
+            return;
+        }
+        int ind = (int) Random.Range(0f, UsableObjectController.allUsableObject.Length);
+        this.target = UsableObjectController.allUsableObject[ind].transform;
+    }
+
+    IEnumerator WaitAndExecute(float seconds){
+        yield return new WaitForSeconds(seconds);
+        ExecScript();
+        ActAsScript();
+    }
+
+    void ActAsScript(){
+        float secs = 0.0f;
+        switch (gameMode)
+        {
+            case 1: secs = 15.0f; break;
+            case 2: secs = 5.0f; break;
+            default: Debug.Log("Game Mode Undefined"); return;
+        }
+        IEnumerator coroutine = WaitAndExecute(secs);
+        StartCoroutine(coroutine);
+    }
+
     protected void FixedUpdate()
     {
         base.FixedUpdate();
@@ -73,28 +107,5 @@ public class EnemyAI : PlayerController
         if (!sentMoveCommand){
             this.MoveTo((Vector2)path.vectorPath[currentWaypoint]);
         }
-        
-/*
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
-        Vector2 force = direction * speed * Time.deltaTime;
-
-        // Add force to move character.
-        rb.AddForce(force);
-
-        float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
-        if (distance < nextWaypointDistance)
-        {
-            currentWaypoint++;
-        }
-
-        if (rb.velocity.x >= 0.01f)
-        {
-            currentTransform.localScale = new Vector3(1f, 1f, 1f);
-        }
-        else if (rb.velocity.x <= -0.01f)
-        {
-            currentTransform.localScale = new Vector3(-1f, 1f, 1f);
-        }
-        */
     }
 }

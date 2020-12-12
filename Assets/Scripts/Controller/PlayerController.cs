@@ -124,6 +124,10 @@ public class PlayerController : MonoBehaviour
         displayer.ChangeColor(colorToChange, new Color(colorToChange.r - 0.2f, colorToChange.g - 0.2f, colorToChange.b - 0.2f, 1f));
     }
 
+    public void PlayAnimation(string aname){
+        displayer.PlayAnimation(aname);
+    }
+
     void MoveMove()
     {
         displayer.PlayAnimation("CharacterMove");

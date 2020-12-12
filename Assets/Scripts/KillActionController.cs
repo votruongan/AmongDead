@@ -22,8 +22,9 @@ public class KillActionController : MonoBehaviour
         VisibleInsight vi = other.gameObject.GetComponent<VisibleInsight>();
         if (other.name == "MainPlayer" || (vi != null && !vi.isInPlayerSight)
             || (other.transform.parent && other.transform.parent.gameObject.name == "MainPlayer")) return;
-        // Debug.Log("Killable player: " + other.name);
-        killablePlayers.Add(other.gameObject.GetComponent<PlayerController>());
+        PlayerController pc = other.gameObject.GetComponent<PlayerController>();
+        if (!pc.enabled) return;
+        killablePlayers.Add(pc);
         if (killablePlayers.Count > 0) UIController.SetButtonActive("Kill", null);
     }
     void OnTriggerExit2D(Collider2D other)
@@ -37,24 +38,13 @@ public class KillActionController : MonoBehaviour
     {
         if (killablePlayers.Count <= 0) return;
         Debug.Log("Killing: " + killablePlayers[0].gameObject.name);
-        //exec kill
-        
+        //disable bot controller -> exec kill animation
+        killablePlayers[0].PlayAnimation("CharacterDie");
+        killablePlayers[0].enabled = false;
+        //send to gamecontroller
+        GameController.instance.HandleKill(killablePlayers[0]);
     }
-    // public static void ExecKill()
-    // {
-    //     if (killablePlayers.Count <= 0) return;
-    //     killButtonDisplay.SetCooldownTime(10);
-    //     while (cooldownTime > 0)
-    //     {
-    //         yield return new WaitForSeconds(1.0f);
-    //         cooldownTime--;
-    //         cooldownTimeDisplay.text = cooldownTime.ToString();
-    //     }
-    //     cooldownTime = 0;
-    //     cooldownTimeDisplay.gameObject.SetActive(false);
-    //     gameObject.GetComponent<Button>().interactable = true;
-    // }
-
+    
     // Update is called once per frame
     void Update()
     {

@@ -24,7 +24,7 @@ public class UsableObjectController : MonoBehaviour
             }
         }
         allUsableObject = GameObject.FindGameObjectsWithTag("UsableObject");
-        this.instance = this;
+        instance = this;
         createdUsableObjects = new List<GameObject>();
     }
     public void MountObject(int objectIndex, int mountIndex)

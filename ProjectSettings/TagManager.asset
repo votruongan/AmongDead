@@ -7,6 +7,8 @@ TagManager:
   - UsableObjectMount
   - Door
   - Vent
+  - Bullet
+  - UsableObject
   layers:
   - Default
   - TransparentFX

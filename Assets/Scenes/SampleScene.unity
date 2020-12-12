@@ -673,8 +673,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 4.67, y: 3.68}
+  m_Offset: {x: 0.05364766, y: 0.1341206}
+  m_Size: {x: 3.7043393, y: 2.9825873}
   m_Direction: 1
 --- !u!1 &37042187
 GameObject:
@@ -1353,6 +1353,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: ccdffd58115ebd64195cadce9e954530,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: ccdffd58115ebd64195cadce9e954530,
         type: 3}
       propertyPath: m_Size.x
@@ -1457,6 +1462,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: d5af8c6383a7b3b4d88bca8ae473adc1,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
       objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: d5af8c6383a7b3b4d88bca8ae473adc1,
         type: 3}
@@ -4782,6 +4792,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: 875e2e9fe40aeb74a810a211ff5e0531,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 6528660387045478229, guid: 875e2e9fe40aeb74a810a211ff5e0531,
         type: 3}
       propertyPath: m_RootOrder
@@ -4944,6 +4959,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: 764e762c08d8c4e47ad5961da56e3e1a,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
       objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: 764e762c08d8c4e47ad5961da56e3e1a,
         type: 3}
@@ -5401,7 +5421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAA4IezXCqtLWgIAAPsEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMziVjU4hDby0Q0gOBCenk4ouw1liDLHkkOXxk+O9dyTJ26YFBfvt29fbt2l+ES1NBZpVeas5WigH5MSDuTL4NuuALnOheyS2/QMv54MwWjkQ9541arhCPXZpRJVjNs59yLxw5QrCWPFe6XLA9zJSxBuGcCgMY0sq6bInQ14Cc8G84dSlnPI0Sd7rgaRoNrnjMQFrQPWr0MAncYTwK3IZay0zQsgLmdHcZSRz444YmsaPAiB5GrlimhOAmKCL2XPmOt1UBGlzLjFNs0KvADAQK4PvCOrn97HWeG7Chf03Pc67RqaYs+aUa+0pqDo22Typqd9EkHnldTdHVf/Fh7MO5VuVLe28cuTtswbPDGz1n1Niev3143kmPvUVHKg50J+CjAPmqllrVkmHQ6tql1gZG8+7x1tqsgOzQ4Y3UO7CuOs/bcbbDdD1cffenmeDlzjs5boCtUN5wvwOgcTq/UbDfEBNKIOpU/DHwTvf9VQqBZ66NxVDoUjp5O1VrRyUL75nrprYzpSV4OIiuQFJhzxssY+9HeBfrXXsXeabupQmXh1j7LtyleLjjR9FdaKOOt2GZQh1XYIp1bQWX0Il2gVf0aaakbDas70mbtq11TrNe2r7m7N/VIgkkuymbZt8fp0DxN3yEJJmwyTjZJU/x6Ckhfve4xD6p2DRCgz04NdkVl7hn7bdksNS08tvOND0u+aVUPcu5zNU20wBy3VS4CQeNl+CbyRaMo0FbsJZLP2/ylRKhsgOw9FYo9Z0uTlbTtKuSkop/KuuQlMz8xyMlV3L9C1BLAwQUAAAICAAAOCHs6m2Dg2wAAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNVRUEovSizIKAaKGII4pZkpIHa0knmqeZJlimWysZllaiIQ65qlmpubppiamCeZWxgaWZgrxQLVl1QWpPol5qZC9AQklmSkZealZOal67kXZaa4g4xWiq0FAFBLAQItABQAAAgIAAA4IezXCqtLWgIAAPsEAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAA4IezqbYODbAAAAHgAAAAJACQAAAAAAAAAAAAAAKcCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAXgMAAAAA
+    dataString: UEsDBBQAAAgIAAA4IewhQfPrWAIAAPkEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMziVjKMTQWwuE9JCECe3k4ouw1liDLHn0ESAZ/ntXsowdevBY3n27+97uyp+ES1NDbpVea86eFAPyY0D8mXwbdM5HONG9klv+AS3mjTNbehANmFdquUL7yIcZVYHVPP8p98KDEzQ6yQulqxXbw0IZa9BcUGEAXVpZHy3R9DkgJ3wN5z7kjKdx6k8feJongwsec5AWdA+a3E0jdjgaR2wDdTIXtKqBed5dRDqO+EkDk6goIpK7mS+hhOAmEiL2XAfB27oEDV4x4xT1BRJebgl8X1rPtR/7UhQGbBSv6XnJNbapSUp+qaZ3FTWHhtg7Fc6XGU/vG1ZN1qf/AMNRcBdaVY9t4VHii9iS54dXes6psb3u9s3Lr8ydPFJxoDsBbyXIZ7XWykmGTqudD3UGxsvu86ptUUJ+6OwN1Rujq7uOt8NsR+k1XIL800Lwahc6P2kMW6FCv8MGgMbZ/EbCYT9MTIFWz+KvgT9031+k6Hjg2lh0RZXS09sppz2UrELPvBpnF0pLCOZIugZJhT1vMI29neGNr1f2xvNA/ZWJxaOvvQk3IcHc4ZPkxrVRx+uwTKmOT2DKF2cFl9CR9o5n7NNCSdmsWL8nbdjW6YLmvbC94+zrapEU0t2czfPv93Og+AzvIU2nbDpJd+lsNJ6lJOwel6iTik1DNLYHpya75BL3rP2TDNaa1mHdmabHNf+oVK/lXBZqm2sA+dJkuBIHjUXwXrIV49igLVjLZZg3+cyIUPkBWHZNlAWlq5PVNOuyZKTm78p6S0YW4deRkQu5/ANQSwMEFAAACAgAADgh7Optg4NsAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTVUVBKL0osyCgGihiCOKWZKSB2tJJ5qnmSZYplsrGZZWoiEOuapZqbm6aYmpgnmVsYGlmYK8UC1ZdUFqT6JeamQvQEJJZkpGXmpWTmpeu5F2WmuIOMVoqtBQBQSwECLQAUAAAICAAAOCHsIUHz61gCAAD5BAAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAOCHs6m2Dg2wAAAB4AAAACQAkAAAAAAAAAAAAAAClAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAFwDAAAAAA==
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -5636,6 +5656,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: ccdffd58115ebd64195cadce9e954530,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
       objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: ccdffd58115ebd64195cadce9e954530,
         type: 3}
@@ -6010,6 +6035,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: d5af8c6383a7b3b4d88bca8ae473adc1,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
       objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: d5af8c6383a7b3b4d88bca8ae473adc1,
         type: 3}
@@ -8393,6 +8423,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: 875e2e9fe40aeb74a810a211ff5e0531,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: 875e2e9fe40aeb74a810a211ff5e0531,
         type: 3}
       propertyPath: m_Size.x
@@ -8497,6 +8532,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: 875e2e9fe40aeb74a810a211ff5e0531,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
       objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: 875e2e9fe40aeb74a810a211ff5e0531,
         type: 3}
@@ -9581,7 +9621,7 @@ GameObject:
   - component: {fileID: 588525314}
   m_Layer: 9
   m_Name: item-emecall
-  m_TagString: Untagged
+  m_TagString: UsableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9894,6 +9934,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: 2c9ec32d4e2b6874293acda257b41d97,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
       objectReference: {fileID: 0}
     - target: {fileID: 6528660387045478229, guid: 2c9ec32d4e2b6874293acda257b41d97,
         type: 3}
@@ -11916,8 +11961,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 4.67, y: 3.68}
+  m_Offset: {x: 0.078704625, y: 0.18364765}
+  m_Size: {x: 3.7255383, y: 2.8404863}
   m_Direction: 1
 --- !u!1 &693804747
 GameObject:
@@ -12900,6 +12945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: f196e7bdb309b4a4683896cde99c253e,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
       objectReference: {fileID: 0}
     - target: {fileID: 6528660387045478229, guid: f196e7bdb309b4a4683896cde99c253e,
         type: 3}
@@ -14158,6 +14208,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: 875e2e9fe40aeb74a810a211ff5e0531,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: 875e2e9fe40aeb74a810a211ff5e0531,
         type: 3}
       propertyPath: m_Offset.x
@@ -15114,6 +15169,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: 2243fac156d728e4f855a767714acd44,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
       objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: 2243fac156d728e4f855a767714acd44,
         type: 3}
@@ -18128,6 +18188,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: ccdffd58115ebd64195cadce9e954530,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: ccdffd58115ebd64195cadce9e954530,
         type: 3}
       propertyPath: m_Size.x
@@ -18567,7 +18632,7 @@ GameObject:
   - component: {fileID: 1129589269}
   m_Layer: 9
   m_Name: item-communication
-  m_TagString: Untagged
+  m_TagString: UsableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20827,6 +20892,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: c31fc984d97200848b042536553cd4f6,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 6528660387045478229, guid: c31fc984d97200848b042536553cd4f6,
         type: 3}
       propertyPath: m_RootOrder
@@ -22333,6 +22403,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: ccdffd58115ebd64195cadce9e954530,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: ccdffd58115ebd64195cadce9e954530,
         type: 3}
       propertyPath: m_Offset.x
@@ -22814,6 +22889,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: 875e2e9fe40aeb74a810a211ff5e0531,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: 875e2e9fe40aeb74a810a211ff5e0531,
         type: 3}
       propertyPath: m_Offset.x
@@ -23124,6 +23204,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: 875e2e9fe40aeb74a810a211ff5e0531,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
       objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: 875e2e9fe40aeb74a810a211ff5e0531,
         type: 3}
@@ -23449,6 +23534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: d5b88096ffafcb24eb94468f0a7a193d,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
       objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: d5b88096ffafcb24eb94468f0a7a193d,
         type: 3}
@@ -23794,9 +23884,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.27, y: -1.165}
-      - {x: 1.37, y: -0.73499995}
-      - {x: 1.52, y: -0.72499996}
+    - - {x: 1.2934012, y: -1.1025963}
+      - {x: 1.5221779, y: -0.7958711}
+      - {x: 1.5605804, y: -0.72499996}
       - {x: 1.64, y: -0.625}
       - {x: 1.64, y: -0.185}
       - {x: 1.5699999, y: -0.095}
@@ -23809,23 +23899,23 @@ PolygonCollider2D:
       - {x: -0.3006334, y: 1.3140987}
       - {x: -0.6493044, y: 1.3075569}
       - {x: -0.9489171, y: 1.311222}
-      - {x: -1.0141327, y: 0.56452054}
+      - {x: -1.0648586, y: 0.82829446}
       - {x: -1.25, y: 0.645}
       - {x: -1.35, y: 0.645}
       - {x: -1.64, y: 0.36499998}
       - {x: -1.64, y: -0.175}
-      - {x: -1.13, y: -0.355}
-      - {x: -1.06, y: -0.235}
+      - {x: -1.251742, y: -0.40572593}
+      - {x: -1.1005805, y: -0.5393547}
       - {x: -0.96999997, y: -0.675}
-      - {x: -0.44518578, y: -0.71148777}
+      - {x: -0.6277989, y: -0.88395596}
       - {x: -0.35, y: -1.145}
-      - {x: -0.17, y: -1.145}
+      - {x: -0.25116104, y: -1.3377585}
       - {x: -0.14999999, y: -1.505}
       - {x: 0.41, y: -1.685}
       - {x: 0.48999998, y: -1.685}
-      - {x: 0.77, y: -1.415}
-      - {x: 0.85999995, y: -1.3249999}
-      - {x: 0.84999996, y: -1.135}
+      - {x: 0.8246029, y: -1.4384012}
+      - {x: 0.92240363, y: -1.3796026}
+      - {x: 1.0762131, y: -1.2832077}
 --- !u!1 &1474694966
 GameObject:
   m_ObjectHideFlags: 0
@@ -24695,6 +24785,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: f196e7bdb309b4a4683896cde99c253e,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 6528660387045478229, guid: f196e7bdb309b4a4683896cde99c253e,
         type: 3}
       propertyPath: m_RootOrder
@@ -25562,8 +25657,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 4.67, y: 3.68}
+  m_Offset: {x: 0.07918909, y: 0.18519486}
+  m_Size: {x: 3.6597471, y: 2.791108}
   m_Direction: 1
 --- !u!1 &1608418440
 GameObject:
@@ -25981,6 +26076,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: d5b88096ffafcb24eb94468f0a7a193d,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
       objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: d5b88096ffafcb24eb94468f0a7a193d,
         type: 3}
@@ -26437,6 +26537,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: d5b88096ffafcb24eb94468f0a7a193d,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: d5b88096ffafcb24eb94468f0a7a193d,
         type: 3}
       propertyPath: m_Size.x
@@ -26785,6 +26890,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: 875e2e9fe40aeb74a810a211ff5e0531,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
       objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: 875e2e9fe40aeb74a810a211ff5e0531,
         type: 3}
@@ -30032,8 +30142,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.040387873, y: -0.06761479}
-  m_Size: {x: 4.42659, y: 3.54477}
+  m_Offset: {x: 0.0046992213, y: 0.09334708}
+  m_Size: {x: 3.7803483, y: 2.8616369}
   m_Direction: 1
 --- !u!1 &1840185170
 GameObject:
@@ -30323,6 +30433,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: 764e762c08d8c4e47ad5961da56e3e1a,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
       objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: 764e762c08d8c4e47ad5961da56e3e1a,
         type: 3}
@@ -38484,6 +38599,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 3549503769803660092, guid: ccdffd58115ebd64195cadce9e954530,
+        type: 3}
+      propertyPath: m_TagString
+      value: UsableObject
+      objectReference: {fileID: 0}
     - target: {fileID: 4104869720490178873, guid: ccdffd58115ebd64195cadce9e954530,
         type: 3}
       propertyPath: m_Size.x
@@ -39493,8 +39613,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 4.67, y: 3.68}
+  m_Offset: {x: -0.036019783, y: 0.19810155}
+  m_Size: {x: 3.7335353, y: 2.8515973}
   m_Direction: 1
 --- !u!1 &2076727395
 GameObject:

@@ -53,6 +53,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da995435df04984899886f6a6c7ea67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: {x: 0, y: 0}
+  speedDecay: {x: 0, y: 0}
+  speedMax: {x: 0, y: 0}
+  horizontalDir: 1
+  verticalDir: 1
+  displayer: {fileID: 6463090900285045913}
+  rigidbody: {fileID: 0}
+  collisionSensor: 
+  targetToMove: {x: 0, y: 0, z: 0}
+  isMakingMovement: 0
+  isMoveToTarget: 0
+  isMovable: 0
+  playerNameDisplay: {fileID: 0}
   target: {fileID: 0}
   speed: 400
   nextWaypointDistance: 3
@@ -516,7 +529,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.09, y: 0}
-  m_Size: {x: 0.5, y: 0.75}
+  m_Size: {x: 0.5, y: 0.5}
   m_Direction: 0
 --- !u!1 &6463090900425682461
 GameObject:

@@ -10,15 +10,20 @@ public class GameController : MonoBehaviour
     public GameObject prefabBotPlayer;
     public bool isMultiplayer = false;
     public int gameMode = 1;
+    public static GameController instance;
+    
+    //LoneWolf mode - kill count
+    public int LW_KillCount;
 
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         mainPlayer = GameObject.Find("MainPlayer").GetComponent<MainPlayerController>();
         isMultiplayer = ImmortalInfoHolder.GetBool("isMultiplayer");
         // gameMode = ImmortalInfoHolder.GetInt("gameMode",-2810);
         switch (gameMode)
-        {           
+        {
             case 1: SetupLoneWolf(); break;
             case 2: SetupCaptureShip(); break;
             default: Debug.Log("Game Mode Undefined"); break;
@@ -42,13 +47,25 @@ public class GameController : MonoBehaviour
         return pis.ToArray();
     }
 
+    public void HandleKill(PlayerController pc){
+        if (isMultiplayer){
+
+        }
+        if (gameMode == 1){
+            LW_KillCount ++;
+            TaskDisplayController.instance.RemoveText(0);
+            TaskDisplayController.instance.AddNormalText(StringUtils.ExecTemplate(StringTemplate.Task_LoneWolf,LW_KillCount.ToString()), Color.white);
+        }
+    }
+
     public void SetupLoneWolf(){
+        LW_KillCount = 0;
         if (isMultiplayer){
 
         }
         PlayerInfo[] pis = ExecCreateAround(0.5f, -1.5f, 10);
         SetupPlayers(pis);
-        TaskDisplayController.instance.AddNormalText("Kill everyone on this ship without being detected. (0/10)", Color.white);
+        TaskDisplayController.instance.AddNormalText(StringUtils.ExecTemplate(StringTemplate.Task_LoneWolf,"0"), Color.white);
     }
     public void SetupCaptureShip(){
         if (isMultiplayer){
@@ -61,7 +78,7 @@ public class GameController : MonoBehaviour
         }
         SetupPlayers(humanPis);
         SetupPlayers(imposPis);
-        TaskDisplayController.instance.AddNormalText("Kill everyone on this ship without being detected. (0/10)", Color.white);
+        TaskDisplayController.instance.AddNormalText("Let Capture the ship. (0/10)", Color.white);
     }
 
     public bool CheckMainPlayer(string playerId){
@@ -82,7 +99,6 @@ public class GameController : MonoBehaviour
             if (pi.isBot){
                 go = Instantiate(prefabBotPlayer);
                 playerControllers.Add(go.GetComponent<EnemyAI>());
-                ((EnemyAI) playerControllers[playerControllers.Count - 1]).target = mainPlayer.transform;
             }
             else{
                 go = Instantiate(prefabRealPlayer);

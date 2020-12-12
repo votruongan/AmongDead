@@ -24,7 +24,8 @@ public class TaskDisplayController : MonoBehaviour
     }
     public void RemoveText(int textIndex)
     {
-        if (textIndex > spawnedText.Count - 1 || textIndex < 0) return;
+        Debug.Log(textIndex.ToString() + " - " + spawnedText.Count.ToString());
+        if (textIndex >= spawnedText.Count || textIndex < 0) return;
         for (int i = textIndex + 1; i < spawnedText.Count; i++)
         {
             RectTransform rt = spawnedText[i].gameObject.GetComponent<RectTransform>();
