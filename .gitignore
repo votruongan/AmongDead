@@ -34,7 +34,8 @@ sysinfo.txt
 .consulo/
 /*.tmp
 /*.svd
- 
+*.csproj
+*.sln
 # ============ #
 # OS generated #
 # ============ #
