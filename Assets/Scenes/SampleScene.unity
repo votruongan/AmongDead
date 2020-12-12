@@ -21399,7 +21399,7 @@ MonoBehaviour:
   prefabGamePlayer: {fileID: 2450577121538449551, guid: 3c41f26698228604e87254f882d93635,
     type: 3}
   isMultiplayer: 0
-  gameMode: 1
+  gameMode: 2
 --- !u!114 &1334149811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23529,7 +23529,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470423004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.02, y: -1.5, z: 0}
+  m_LocalPosition: {x: -1.34, y: -29, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children:
   - {fileID: 1736864314}
@@ -28257,7 +28257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736864308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.082, y: -0.022, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1470423008}

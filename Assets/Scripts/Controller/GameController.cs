@@ -25,29 +25,41 @@ public class GameController : MonoBehaviour
         Debug.Log("GameController initialized");
     }
 
-    public void SetupLoneWolf(){
-        if (isMultiplayer){
-
-        }
+    public PlayerInfo[] ExecCreateAround(float rootX, float rootY, int numberOfPlayer, float radiusX = 4f, float radiusY = 2f){
         List<PlayerInfo> pis = new List<PlayerInfo>();
-        const int n = 10;
-        const float dd = 360/n;
+        int n = numberOfPlayer;
+        float dd = 360/n;
         float deg = 0.0f;
         for (int i = 0; i < n; i++){
             PlayerInfo pi = new PlayerInfo();
             deg = i * dd;
-            pi.positionX =  4 * Mathf.Cos(deg);
-            pi.positionY =  -1.5f + 2 * Mathf.Sin(deg);
+            pi.positionX = rootX + radiusX * Mathf.Cos(deg);
+            pi.positionY =  rootY + radiusY * Mathf.Sin(deg);
             pis.Add(pi);
         }
-        SetupPlayers(pis.ToArray());
+        return pis.ToArray();
+    }
+
+    public void SetupLoneWolf(){
+        if (isMultiplayer){
+
+        }
+        PlayerInfo[] pis = ExecCreateAround(0.5f, -1.5f, 10);
+        SetupPlayers(pis);
         TaskDisplayController.instance.AddNormalText("Kill everyone on this ship without being detected. (0/10)", Color.white);
     }
     public void SetupCaptureShip(){
         if (isMultiplayer){
 
         }
-
+        PlayerInfo[] humanPis = ExecCreateAround(0.5f, -1.5f, 5);
+        PlayerInfo[] imposPis = ExecCreateAround(0.5f, -28.0f, 5, 3.0f, 1.5f);
+        foreach(PlayerInfo pi in imposPis){
+            pi.isImpostor = true;
+        }
+        SetupPlayers(humanPis);
+        SetupPlayers(imposPis);
+        TaskDisplayController.instance.AddNormalText("Kill everyone on this ship without being detected. (0/10)", Color.white);
     }
 
     public bool CheckMainPlayer(string playerId){
