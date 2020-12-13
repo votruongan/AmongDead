@@ -1,0 +1,1028 @@
+fileFormatVersion: 2
+guid: fafabc00a74e5ed4fa6d7efc04964c69
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8211830630392862684
+    second: rea-dec (3)_0
+  - first:
+      213: 1219256184543822241
+    second: rea-dec (3)_1
+  - first:
+      213: 2375253002072604185
+    second: rea-dec (3)_2
+  - first:
+      213: 820424924030690926
+    second: rea-dec (3)_3
+  - first:
+      213: 2626518887757684078
+    second: rea-dec (3)_4
+  - first:
+      213: -5057062923857852979
+    second: rea-dec (3)_5
+  - first:
+      213: -259675303302131866
+    second: rea-dec (3)_6
+  - first:
+      213: -6322433158097128582
+    second: rea-dec (3)_7
+  - first:
+      213: -5842857020757085581
+    second: rea-dec (3)_8
+  - first:
+      213: 8195606125016839333
+    second: rea-dec (3)_9
+  - first:
+      213: 3879815418883719602
+    second: rea-dec (3)_10
+  - first:
+      213: 1661191724323459094
+    second: rea-dec (3)_11
+  - first:
+      213: -7927972181482496479
+    second: rea-dec (3)_12
+  - first:
+      213: -5309244897144965901
+    second: rea-dec (3)_13
+  - first:
+      213: -4328867845435445755
+    second: rea-dec (3)_14
+  - first:
+      213: -2078346505869764327
+    second: rea-dec (3)_15
+  - first:
+      213: 2835142866975773473
+    second: rea-dec (3)_16
+  - first:
+      213: 6028377385118804465
+    second: rea-dec (3)_17
+  - first:
+      213: -5826873766702994154
+    second: rea-dec (3)_18
+  - first:
+      213: 3402625857119525630
+    second: rea-dec (3)_19
+  - first:
+      213: 3142439114963183612
+    second: rea-dec (3)_20
+  - first:
+      213: -7864701045099161034
+    second: rea-dec (3)_21
+  - first:
+      213: 8173017780067781646
+    second: rea-dec (3)_22
+  - first:
+      213: -7917850615023744139
+    second: rea-dec (3)_23
+  - first:
+      213: -8759620631696477392
+    second: rea-dec (3)_24
+  - first:
+      213: 5697528700852009630
+    second: rea-dec (3)_25
+  - first:
+      213: 7495130236217960639
+    second: rea-dec (3)_26
+  - first:
+      213: 2049667053261957741
+    second: rea-dec (3)_27
+  - first:
+      213: 84443817190610125
+    second: rea-dec (3)_28
+  - first:
+      213: 15930336506780963
+    second: rea-dec (3)_29
+  - first:
+      213: -3505001464995060168
+    second: rea-dec (3)_30
+  - first:
+      213: -7852513191419335607
+    second: rea-dec (3)_31
+  - first:
+      213: 6171065393956573401
+    second: rea-dec (3)_32
+  - first:
+      213: 4941015447203884095
+    second: rea-dec (3)_33
+  - first:
+      213: 5404903282717844182
+    second: rea-dec (3)_34
+  - first:
+      213: 3362210093989602362
+    second: rea-dec (3)_35
+  - first:
+      213: 4824180145362641690
+    second: rea-dec (3)_36
+  - first:
+      213: 3900925976472508046
+    second: rea-dec (3)_37
+  - first:
+      213: 7627631586504067095
+    second: rea-dec (3)_38
+  - first:
+      213: 2464486307247068373
+    second: rea-dec (3)_39
+  - first:
+      213: -1950589043548498349
+    second: rea-dec (3)_40
+  - first:
+      213: 2520074364712981222
+    second: rea-dec (3)_41
+  - first:
+      213: -960212606294515747
+    second: rea-dec (3)_42
+  - first:
+      213: -1356458552816705044
+    second: rea-dec (3)_43
+  - first:
+      213: 2537990071914691034
+    second: rea-dec (3)_44
+  - first:
+      213: -2627026397686570839
+    second: rea-dec (3)_45
+  - first:
+      213: -386975728291966626
+    second: rea-dec (3)_46
+  - first:
+      213: 39447368844312650
+    second: rea-dec (3)_47
+  - first:
+      213: 842063109818416476
+    second: rea-dec (3)_48
+  - first:
+      213: 5580694049688662039
+    second: rea-dec (3)_49
+  - first:
+      213: -4477318032631383413
+    second: rea-dec (3)_50
+  - first:
+      213: 8516601376160028462
+    second: rea-dec (3)_51
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rea-dec (3)_2
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 369
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91eb730550896f020800000000000000
+      internalID: 2375253002072604185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 348
+        width: 142
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d96a43305437420800000000000000
+      internalID: 2626518887757684078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_5
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 348
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc587a07014b1d9b0800000000000000
+      internalID: -5057062923857852979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_7
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 347
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7338775a843248a0800000000000000
+      internalID: -6322433158097128582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_10
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 326
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1c5ac319fd7d530800000000000000
+      internalID: 3879815418883719602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_11
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 320
+        width: 142
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6105e18621dbd0710800000000000000
+      internalID: 1661191724323459094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_13
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 325
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f47e1845e5c156b0800000000000000
+      internalID: -5309244897144965901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_14
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 298
+        width: 142
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ea53141a5cce3c0800000000000000
+      internalID: -4328867845435445755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_15
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 292
+        width: 142
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919557d4dda3823e0800000000000000
+      internalID: -2078346505869764327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_16
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 303
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123d2919a63785720800000000000000
+      internalID: 2835142866975773473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_17
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 265
+        width: 142
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f92104ca4919a350800000000000000
+      internalID: 6028377385118804465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_19
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 264
+        width: 147
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa1b2d603e883f20800000000000000
+      internalID: 3402625857119525630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_20
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 281
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf76ca7c9bf2c9b20800000000000000
+      internalID: 3142439114963183612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_21
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 259
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a98368118fad290800000000000000
+      internalID: -7864701045099161034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_22
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 237
+        width: 142
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c44e35e546c6170800000000000000
+      internalID: 8173017780067781646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_23
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 236
+        width: 142
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57bc6e2f0d42e1290800000000000000
+      internalID: -7917850615023744139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_24
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 237
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0337c8822739f6680800000000000000
+      internalID: -8759620631696477392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_25
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 201
+        width: 142
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a70e7aa20b11f40800000000000000
+      internalID: 5697528700852009630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_27
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 207
+        width: 147
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a20894351e17c10800000000000000
+      internalID: 2049667053261957741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_28
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 215
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4df1f44310c2100800000000000000
+      internalID: 84443817190610125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_30
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 174
+        width: 147
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836eeb5ecbbbb5fc0800000000000000
+      internalID: -3505001464995060168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_31
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 193
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ca1675bd4460390800000000000000
+      internalID: -7852513191419335607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_34
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 171
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d26db336e2120b40800000000000000
+      internalID: 5404903282717844182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_35
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 144
+        width: 142
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34ab784448f8ae20800000000000000
+      internalID: 3362210093989602362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_36
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 140
+        width: 142
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1325d8584ee2f240800000000000000
+      internalID: 4824180145362641690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_38
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 116
+        width: 142
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718cf17d38acad960800000000000000
+      internalID: 7627631586504067095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_39
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 108
+        width: 142
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d496413d3d933220800000000000000
+      internalID: 2464486307247068373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_40
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 75
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356d58c799d1ee4e0800000000000000
+      internalID: -1950589043548498349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_42
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 78
+        width: 142
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf96f4d8b3aca2f0800000000000000
+      internalID: -960212606294515747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_43
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 84
+        width: 142
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1e1de0224ec2de0800000000000000
+      internalID: -1356458552816705044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_44
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 73
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad971f70680c83320800000000000000
+      internalID: 2537990071914691034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_47
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 44
+        width: 144
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a400a474c252c8000800000000000000
+      internalID: 39447368844312650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_48
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 45
+        width: 142
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5dff2bdfeb9fab00800000000000000
+      internalID: 842063109818416476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_49
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 25
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71034df9bab927d40800000000000000
+      internalID: 5580694049688662039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_50
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 23
+        width: 142
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a3e8e98fe5dd1c0800000000000000
+      internalID: -4477318032631383413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rea-dec (3)_51
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 21
+        width: 142
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e271f9724db013670800000000000000
+      internalID: 8516601376160028462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

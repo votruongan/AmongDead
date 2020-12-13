@@ -1,0 +1,66 @@
+
+  GetCacheData1__deps:[
+    'cacheData',
+    'returnString'
+  ],
+
+  GetCacheData1: function (h, key0){
+    const obj = uPlugin.cacheData[h];
+    if (!obj) return '';
+    return uPlugin.returnString(obj[key0]); 
+  },
+
+  GetCacheData2__deps:[
+    'cacheData',
+    'returnString'
+  ],
+
+  GetCacheData2: function (h, key0, key1){
+    const obj = uPlugin.cacheData[h];
+    if (!obj) return '';
+    return uPlugin.returnString(obj[key0][key1]); 
+  },
+
+  GetCacheData3__deps:[
+    'cacheData',
+    'returnString'
+  ],
+
+  GetCacheData3: function (h, key0, key1, key2){
+    const obj = uPlugin.cacheData[h];
+    if (!obj) return '';
+    return uPlugin.returnString(obj[key0][key1][key2]); 
+  },
+
+  GetCacheData4__deps:[
+    'cacheData',
+    'returnString'
+  ],
+
+  GetCacheData4: function (h, key0, key1, key2, key3){
+    const obj = uPlugin.cacheData[h];
+    if (!obj) return '';
+    return uPlugin.returnString(obj[key0][key1][key2][key3]); 
+  },
+
+  ParseObjectValue__deps:[
+    'cacheData',
+    'hashCode'
+  ],
+
+  ParseObjectValue: function (str){
+    console.log("invoked ParseObjectValue this:",this);
+    console.log("invoked ParseObjectValue proto:",this.prototype);
+    console.log("invoked ParseObjectValue uPlugin:",uPlugin);
+    const h = uPlugin.hashCode(str);
+    uPlugin.cacheData[h] = JSON.parse(str);
+    return h.toString();
+  },
+
+  ReleaseCache__deps:[
+    'cacheData'
+  ],
+  
+  ReleaseCache: function(h){
+    uPlugin.cacheData[h] = null;
+  }
