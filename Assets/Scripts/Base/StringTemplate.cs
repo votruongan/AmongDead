@@ -1,6 +1,6 @@
 public struct StringTemplate{
     public static string LoneWolf_Task = "Kill everyone on this ship without triggering the alarm. (${1}/10)";
-    public static string LoneWolf_Alarm = "Kill the witness.";
+    public static string LoneWolf_Alarm = "YOU ARE DETECTED. KILL THE WITNESS.";
 }
 
 

@@ -9620,7 +9620,7 @@ GameObject:
   - component: {fileID: 588525313}
   - component: {fileID: 588525312}
   - component: {fileID: 588525314}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: item-emecall
   m_TagString: UsableObject
   m_Icon: {fileID: 0}
@@ -23741,7 +23741,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469960537}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.67, y: -2.39, z: 0}
+  m_LocalPosition: {x: -2.31, y: -1.5, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children:
   - {fileID: 1744839456}
@@ -40759,11 +40759,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 147234724892738701, guid: fa116eb910275d14c93f9f3e7faf14fb,
-        type: 3}
-      propertyPath: m_Layer
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 5125679530353053401, guid: fa116eb910275d14c93f9f3e7faf14fb,
         type: 3}
       propertyPath: m_IsTrigger
@@ -40828,6 +40823,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BotPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6463090899189826812, guid: fa116eb910275d14c93f9f3e7faf14fb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa116eb910275d14c93f9f3e7faf14fb, type: 3}

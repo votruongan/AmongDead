@@ -60,12 +60,17 @@ public class GameController : MonoBehaviour
         }
     }
 
+    public void LoneWolfDetected(){
+        TaskDisplayController.instance.RemoveText(0);
+        TaskDisplayController.instance.AddNormalText(StringUtils.ExecTemplate(StringTemplate.LoneWolf_Alarm), Color.white);
+    }
+
     public void SetupLoneWolf(){
         LW_KillCount = 0;
         if (isMultiplayer){
 
         }
-        PlayerInfo[] pis = ExecCreateAround(0.5f, -1.5f, 1);
+        PlayerInfo[] pis = ExecCreateAround(0.5f, -1.5f, 10);
         SetupPlayers(pis);
         TaskDisplayController.instance.AddNormalText(StringUtils.ExecTemplate(StringTemplate.LoneWolf_Task,"0"), Color.white);
     }

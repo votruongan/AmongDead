@@ -53,6 +53,12 @@ public class EnemyAI : PlayerController
         }
     }
 
+    public void AlarmMode(){
+        gameMode = 0;
+        this.target = UsableObjectController.alarmButton;
+        Debug.Log("ALARM MODE CALLED");
+    }
+
     void ExecScript(){
         if (GameController.instance.isMultiplayer){
             return;
@@ -102,6 +108,12 @@ public class EnemyAI : PlayerController
         if (lastDistance == tmpDistance){
             Debug.Log("Stuck " + tmpDistance.ToString());
             lastDistance = -1.0f;
+        }
+        if (gameMode == 0){
+            float targetDist = Vector2.Distance(rb.position, target.position);
+            if (targetDist < 3.0f){
+                Debug.Log("ALARM TRIGGERED");
+            }
         }
         if (tmpDistance < nextWaypointDistance)
         {

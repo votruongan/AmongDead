@@ -7,11 +7,13 @@ public class BotScriptController : MonoBehaviour
     public List<PlayerController> inSights;
     public bool isMainPlayerInsight;
     public bool bodyDetected;
+    public EnemyAI thisBot;
     // Start is called before the first frame update
     void Start()
     {
         inSights = new List<PlayerController>();
         isMainPlayerInsight = false;
+        thisBot = this.transform.parent.gameObject.GetComponent<EnemyAI>();
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
@@ -21,7 +23,7 @@ public class BotScriptController : MonoBehaviour
         }
         PlayerController pc = other.GetComponent<EnemyAI>();
         if (pc == null)
-            PlayerController pc = other.GetComponent<PlayerController>();
+            pc = other.GetComponent<PlayerController>();
         if (pc != null)
             inSights.Add(pc);
     }
@@ -33,7 +35,7 @@ public class BotScriptController : MonoBehaviour
         }
         PlayerController pc = other.GetComponent<EnemyAI>();
         if (pc == null)
-            PlayerController pc = other.GetComponent<PlayerController>();
+            pc = other.GetComponent<PlayerController>();
         if (pc != null)
             inSights.Remove(pc);
     }
@@ -47,7 +49,9 @@ public class BotScriptController : MonoBehaviour
             }
         }
         if (bodyDetected && isMainPlayerInsight){
-            
+            GameController.instance.LoneWolfDetected();
+            thisBot.AlarmMode();
+            this.enabled = false;
         }
     }
 }

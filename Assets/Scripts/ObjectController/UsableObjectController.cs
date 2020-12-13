@@ -11,8 +11,10 @@ public class UsableObjectController : MonoBehaviour
     public List<GameObject> createdUsableObjects;
     public static GameObject[] allUsableObject;
     public static UsableObjectController instance;
+    public static Transform alarmButton;
     void Start()
     {
+        instance = this;
         if (usableMountPositions == null || usableMountPositions.Count == 0)
         {
             usableMountPositions = new List<Transform>();
@@ -24,7 +26,7 @@ public class UsableObjectController : MonoBehaviour
             }
         }
         allUsableObject = GameObject.FindGameObjectsWithTag("UsableObject");
-        instance = this;
+        alarmButton = GameObject.Find("item-emecall").GetComponent<Transform>();
         createdUsableObjects = new List<GameObject>();
     }
     public void MountObject(int objectIndex, int mountIndex)
