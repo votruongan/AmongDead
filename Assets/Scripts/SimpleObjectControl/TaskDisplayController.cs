@@ -31,6 +31,7 @@ public class TaskDisplayController : MonoBehaviour
             RectTransform rt = spawnedText[i].gameObject.GetComponent<RectTransform>();
             rt.anchoredPosition = new Vector3(0f, textDirection * textOffset * i, 0f);
         }
+        Destroy(spawnedText[textIndex]);
         spawnedText.Remove(spawnedText[textIndex]);
     }
     public void AddWarningText(string textContent, Color col)
@@ -46,10 +47,11 @@ public class TaskDisplayController : MonoBehaviour
         GameObject gO = Instantiate(styledObject, this.transform.position, Quaternion.identity, this.transform);
         spawnedText.Add(gO.GetComponent<Text>());
         // spawnedText[spawnedText.Count - 1].text = displayText + " (" + currentNumber.ToString() + "/" + limitNumber.ToString() + ")";
-        spawnedText[spawnedText.Count - 1].text = displayText;
-        spawnedText[spawnedText.Count - 1].color = textColor;
+        int last = spawnedText.Count - 1;
+        spawnedText[last].text = displayText;
+        spawnedText[last].color = textColor;
         RectTransform rt = gO.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector3(0f, textDirection * textOffset * ++currentIndex, 0f);
+        rt.anchoredPosition = new Vector3(0f, textDirection * textOffset * (last+1), 0f);
     }
     public GameObject buttonTogglePanel;
     public Text buttonTPtext;

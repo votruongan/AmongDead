@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour
     //LoneWolf mode - kill count
     public int LW_KillCount;
 
+    public int CTS_ZoneCount;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +56,7 @@ public class GameController : MonoBehaviour
         if (gameMode == 1){
             LW_KillCount ++;
             TaskDisplayController.instance.RemoveText(0);
-            TaskDisplayController.instance.AddNormalText(StringUtils.ExecTemplate(StringTemplate.Task_LoneWolf,LW_KillCount.ToString()), Color.white);
+            TaskDisplayController.instance.AddNormalText(StringUtils.ExecTemplate(StringTemplate.LoneWolf_Task,LW_KillCount.ToString()), Color.white);
         }
     }
 
@@ -63,9 +65,9 @@ public class GameController : MonoBehaviour
         if (isMultiplayer){
 
         }
-        PlayerInfo[] pis = ExecCreateAround(0.5f, -1.5f, 10);
+        PlayerInfo[] pis = ExecCreateAround(0.5f, -1.5f, 1);
         SetupPlayers(pis);
-        TaskDisplayController.instance.AddNormalText(StringUtils.ExecTemplate(StringTemplate.Task_LoneWolf,"0"), Color.white);
+        TaskDisplayController.instance.AddNormalText(StringUtils.ExecTemplate(StringTemplate.LoneWolf_Task,"0"), Color.white);
     }
     public void SetupCaptureShip(){
         if (isMultiplayer){

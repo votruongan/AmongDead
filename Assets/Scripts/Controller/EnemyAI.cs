@@ -5,6 +5,7 @@ using Pathfinding;
 
 public class EnemyAI : PlayerController
 {
+    public bool alarmMode;
     public Transform target;
 
     public float speed = 400f;
@@ -98,12 +99,17 @@ public class EnemyAI : PlayerController
             reachedEndOfPath = false;
         }
         tmpDistance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
+        if (lastDistance == tmpDistance){
+            Debug.Log("Stuck " + tmpDistance.ToString());
+            lastDistance = -1.0f;
+        }
         if (tmpDistance < nextWaypointDistance)
         {
             currentWaypoint++;
             sentMoveCommand = false;
             return;
         }
+        lastDistance = tmpDistance;
         if (!sentMoveCommand){
             this.MoveTo((Vector2)path.vectorPath[currentWaypoint]);
         }
