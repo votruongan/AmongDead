@@ -11,6 +11,7 @@ public class VentDirectionController : MonoBehaviour
     public VentController[] originalTargetVents;
     public VentController[] targetVents;
     public bool isInVent;
+
     void Start()
     {        
         // this.SetActive(false);

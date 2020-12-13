@@ -11,10 +11,14 @@ public class VentController : UsableObjectInfo
 
     public override void ExecUse(){
         this.GetComponent<Animator>().Play("VentOpen");
-        if (!ventDirectionControl.isInVent)
+        if (!ventDirectionControl.isInVent){
+            MainPlayerController.instance.isVenting = true;
             ventDirectionControl.SetVentController(true,this,targetVents);
-        else
+        }
+        else{
             ventDirectionControl.GetOutOfVent();
+            MainPlayerController.instance.isVenting = false;
+        }
     }
 
     // Start is called before the first frame update

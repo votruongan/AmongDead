@@ -167,6 +167,14 @@ public class PlayerController : MonoBehaviour
         speed.x = val * direction;
     }
 
+    public void DisableChild(){        
+        foreach (Transform child in transform)
+        {
+            if (child.name.ToLower().Contains("displayer")) continue;
+            child.gameObject.SetActive(false);
+        }
+    }
+
     public void MoveVertical(float val, int direction = 1)
     {
         MoveMove();

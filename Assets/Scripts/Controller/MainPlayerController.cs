@@ -8,6 +8,8 @@ public class MainPlayerController : PlayerController
     public string isUsable = "";
     public UsableObjectInfo currentUsableObject;
     public Joystick joystick;
+    public static MainPlayerController instance;
+    public bool isVenting;
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Debug.Log(other.gameObject);
@@ -47,6 +49,7 @@ public class MainPlayerController : PlayerController
     }
     private void Start()
     {
+        instance = this;
         base.Start();
         SetPlayerName("tester", true);
     }
@@ -54,6 +57,7 @@ public class MainPlayerController : PlayerController
     void FixedUpdate()
     {
         base.FixedUpdate();
+        if (GameController.isPause) return;
         if (Input.GetKey("w") || Input.GetKey("up") || joystick.Vertical > 0.1f)
         {
             MoveVertical(speedMax.y);

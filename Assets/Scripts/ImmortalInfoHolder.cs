@@ -17,14 +17,26 @@ public class ImmortalInfoHolder : MonoBehaviour
     
     public static void AddString(string key, string value){
         if (stringData == null) stringData = new Dictionary<string,string>();
+        if (stringData.ContainsKey(key)){
+            stringData[key] = value;
+            return;
+        }
         stringData.Add(key,value);
     }
     public static void AddBool(string key, bool value){
         if (boolData == null) boolData = new Dictionary<string,bool>();
+        if (boolData.ContainsKey(key)){
+            boolData[key] = value;
+            return;
+        }
         boolData.Add(key,value);
     }
     public static void AddInt(string key, int value){
         if (intData == null) intData = new Dictionary<string,int>();
+        if (intData.ContainsKey(key)){
+            intData[key] = value;
+            return;
+        }
         intData.Add(key,value);
     }
 

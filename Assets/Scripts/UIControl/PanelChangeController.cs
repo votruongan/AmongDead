@@ -37,11 +37,13 @@ public class PanelChangeController : MonoBehaviour
         MenuPanels[currentPanel].SetActive(true);
         backButton.SetActive(true);
     }
+    //switch to single player with game mode
     public void GotoGameSingle(int gameMode){
         ImmortalInfoHolder.AddBool("isMultiplayer", false);
         ImmortalInfoHolder.AddInt("gameMode", gameMode);
         SceneManager.LoadScene("SampleScene");
     }
+    //switch to multiple player with game mode
     public void GotoGameMulti(int gameMode){
         
     }

@@ -36,6 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\AreaController.cs" />
+     <Compile Include="Assets\AreaPlayerCounter.cs" />
+     <Compile Include="Assets\BotKillController.cs" />
      <Compile Include="Assets\BotScriptController.cs" />
      <Compile Include="Assets\FieldOfView\Scripts\FieldOfView.cs" />
      <Compile Include="Assets\ImpostorAI.cs" />
@@ -313,6 +316,7 @@
      <Compile Include="Assets\Scripts\Controller\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\Controller\GameController.cs" />
      <Compile Include="Assets\Scripts\Controller\GameInfoHolder.cs" />
+     <Compile Include="Assets\Scripts\Controller\GameStatistics.cs" />
      <Compile Include="Assets\Scripts\Controller\MainPlayerController.cs" />
      <Compile Include="Assets\Scripts\Controller\PlayerController.cs" />
      <Compile Include="Assets\Scripts\FieldOfView\BotFOV.cs" />
@@ -329,6 +333,7 @@
      <Compile Include="Assets\Scripts\ServerCommunication.cs" />
      <Compile Include="Assets\Scripts\SimpleObjectControl\CharacterDisplayer.cs" />
      <Compile Include="Assets\Scripts\SimpleObjectControl\ColliderController.cs" />
+     <Compile Include="Assets\Scripts\SimpleObjectControl\DelayStarter.cs" />
      <Compile Include="Assets\Scripts\SimpleObjectControl\ImageColorChanger.cs" />
      <Compile Include="Assets\Scripts\SimpleObjectControl\TaskDisplayController.cs" />
      <Compile Include="Assets\Scripts\SimpleObjectControl\VisibleInsight.cs" />

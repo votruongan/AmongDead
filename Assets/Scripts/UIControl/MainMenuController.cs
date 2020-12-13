@@ -43,6 +43,7 @@ public class MainMenuController : MonoBehaviour
         KeyValueArray kva = new KeyValueArray();
         kva.AddPair("name", name);
         serverCom.SendRequest("SET_NAME", kva.ToArray());
+        ImmortalInfoHolder.AddString("PlayerName", name);
         return true;
     }
 

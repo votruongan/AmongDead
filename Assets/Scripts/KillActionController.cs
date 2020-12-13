@@ -9,21 +9,24 @@ public class KillActionController : MonoBehaviour
 
     public static ButtonDisplayController killButtonDisplay;
 
+    public bool mainIsImpostor;
+
     // Start is called before the first frame update
     void Start()
     {
         killablePlayers = new List<PlayerController>();
         killButtonDisplay = killButtonDisplayCotroller;
+        mainIsImpostor = this.transform.parent.gameObject.GetComponent<MainPlayerController>().info.isImpostor;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         // Debug.Log(other.name);
         VisibleInsight vi = other.gameObject.GetComponent<VisibleInsight>();
-        if (other.name == "MainPlayer" || (vi != null && !vi.isInPlayerSight)
+        if ( MainPlayerController.instance.isVenting || other.name == "MainPlayer" || (vi != null && !vi.isInPlayerSight)
             || (other.transform.parent && other.transform.parent.gameObject.name == "MainPlayer")) return;
         PlayerController pc = other.gameObject.GetComponent<PlayerController>();
-        if (!pc.enabled) return;
+        if (!pc.enabled || pc.info.isImpostor == mainIsImpostor) return;
         killablePlayers.Add(pc);
         if (killablePlayers.Count > 0) UIController.SetButtonActive("Kill", null);
     }
@@ -43,11 +46,11 @@ public class KillActionController : MonoBehaviour
         killablePlayers[0].enabled = false;
         //send to gamecontroller
         GameController.instance.HandleKill(killablePlayers[0]);
+        killablePlayers.RemoveAt(0);
     }
     
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-
     }
 }

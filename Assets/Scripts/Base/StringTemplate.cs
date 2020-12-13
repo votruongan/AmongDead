@@ -1,6 +1,11 @@
 public struct StringTemplate{
+    public static string LoneWolf_Description = "Kill everyone on this ship without triggering the alarm.\n\nIf any one detect you near a corpse, they would be alarmed. Kill them before they reach emergency button.";
     public static string LoneWolf_Task = "Kill everyone on this ship without triggering the alarm. (${1}/10)";
     public static string LoneWolf_Alarm = "YOU ARE DETECTED. KILL THE WITNESS.";
+
+    public static string CTS_Description = "Capture booth the Navigation Room and Reactor Room.\n\nBe careful as enemy could kill you, and you cannot be spawned.";
+    public static string CTS_Task0 = "Capture Navigation Room.";
+    public static string CTS_Task1 = "Capture Reactor Room.";
 }
 
 

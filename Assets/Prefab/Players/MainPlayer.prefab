@@ -330,6 +330,7 @@ MonoBehaviour:
   isUsable: 
   currentUsableObject: {fileID: 0}
   joystick: {fileID: 0}
+  isVenting: 0
 --- !u!70 &1834076617288282787
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -380,7 +381,7 @@ GameObject:
   - component: {fileID: 1834076617685744553}
   - component: {fileID: 1834076617685744555}
   m_Layer: 12
-  m_Name: PlayerName
+  m_Name: NameDisplayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -657,6 +658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   killButtonDisplayCotroller: {fileID: 0}
+  mainIsImpostor: 0
 --- !u!1 &1834076617963833337
 GameObject:
   m_ObjectHideFlags: 0
