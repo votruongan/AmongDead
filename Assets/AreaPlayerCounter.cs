@@ -43,7 +43,7 @@ public class AreaPlayerCounter : MonoBehaviour
         else
             teamBalance--;
     }
-
+    private int lastTeam;
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -52,8 +52,9 @@ public class AreaPlayerCounter : MonoBehaviour
         if (isMainPlayerInside){
             captureProgress.value = ((float)Mathf.Abs(point) )/ 1000.0f;
         }
-        if (Mathf.Abs(point) > 999){
+        if (Mathf.Abs(point) > 999 && point != lastTeam){
             GameController.instance.CaptureArea(this.gameObject.name, point > 0);
+            lastTeam = point;
         }
     }
 }
