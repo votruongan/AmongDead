@@ -47,6 +47,16 @@ public class PanelChangeController : MonoBehaviour
     public void GotoGameMulti(int gameMode){
         
     }
+    public GameObject PanelGameIntro;
+    public void ReadGameIntro(bool val){
+        if (!val){
+            PanelGameIntro.SetActive(false);
+            MenuPanels[0].SetActive(true);
+            return;
+        }
+        PanelGameIntro.SetActive(true);
+        MenuPanels[0].SetActive(false);
+    }
     public void GotoPanel(int index)
     {
         currentPanel = index;

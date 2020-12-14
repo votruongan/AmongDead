@@ -126,6 +126,7 @@ public class EnemyAI : PlayerController
             if (targetDist < 3.0f){
                 // TODO - Finish game when alarm is triggered
                 Debug.Log("ALARM TRIGGERED");
+                GameController.instance.LoneWolfAlarmed();
             }
         }
         if (tmpDistance < nextWaypointDistance)

@@ -6,12 +6,11 @@ public class GameStatistics : MonoBehaviour
 {
     public int killCount = 0;
     public int elapsedSeconds = 0;
-    public static GameStatistics instance;
-    //LoneWolf mode - kill count
-    public int LW_KillCount;
 
     public int CTS_Nav_Count;
     public int CTS_Rect_Count;
+
+    public static GameStatistics instance;
 
     // Start is called before the first frame update
     void Start()
@@ -26,9 +25,14 @@ public class GameStatistics : MonoBehaviour
     }
 
     IEnumerator CountTime(){
-        yield return new WaitForSeconds(1.0f);
-        elapsedSeconds ++;
-        Debug.Log(elapsedSeconds);
+        while (true){
+            if (!GameController.isPause){
+                yield return new WaitForSeconds(1.0f);
+                elapsedSeconds ++;
+            }
+            yield return new WaitForSeconds(1.0f);
+            if (FinishController.isGameFinished) break;
+        }
     }
 
     // Update is called once per frame

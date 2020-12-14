@@ -46,6 +46,7 @@ public class GameController : MonoBehaviour
             pi.positionX = rootX + radiusX * Mathf.Cos(deg);
             pi.positionY =  rootY + radiusY * Mathf.Sin(deg);
             pi.isBot = true;
+            pi.isImpostor = false;
             pi.playerName = ((int) (Random.Range(0.0f,23.5f) * 100000)).ToString();
             pis.Add(pi);
         }
@@ -53,7 +54,7 @@ public class GameController : MonoBehaviour
     }
 
     void SetupLoneWolf(){
-        GameStatistics.instance.LW_KillCount = 0;
+        GameStatistics.instance.killCount = 0;
         if (isMultiplayer){
 
         }
@@ -67,15 +68,22 @@ public class GameController : MonoBehaviour
         if (isMultiplayer){
 
         }
+        GameStatistics.instance.killCount ++;
         if (gameMode == 1){
-            GameStatistics.instance.LW_KillCount ++;
             TaskDisplayController.instance.RemoveText(0);
-            TaskDisplayController.instance.AddNormalText(StringUtils.ExecTemplate(StringTemplate.LoneWolf_Task,GameStatistics.instance.LW_KillCount.ToString()), Color.white);
+            TaskDisplayController.instance.AddNormalText(StringUtils.ExecTemplate(StringTemplate.LoneWolf_Task,GameStatistics.instance.killCount.ToString()), Color.white);
+            if (GameStatistics.instance.killCount == 5){
+                isPause = true;
+                FinishController.instance.DisplayFinish(true,GameStatistics.instance.killCount, GameStatistics.instance.elapsedSeconds);
+            }
             return;
         }
 
     }
-
+    public void LoneWolfAlarmed(){
+        isPause = true;
+        FinishController.instance.DisplayFinish(false,GameStatistics.instance.killCount, GameStatistics.instance.elapsedSeconds);
+    }
     public void LoneWolfDetected(){
         TaskDisplayController.instance.RemoveText(0);
         TaskDisplayController.instance.AddNormalText(StringUtils.ExecTemplate(StringTemplate.LoneWolf_Alarm), Color.white);
@@ -108,6 +116,8 @@ public class GameController : MonoBehaviour
         if (isHumanCapture){
             if (TaskDisplayController.instance.spawnedText.Count == 1){
                 //Victory
+                isPause = true;
+                FinishController.instance.DisplayFinish(true,GameStatistics.instance.killCount, GameStatistics.instance.elapsedSeconds);
                 return;
             }
             TaskDisplayController.instance.RemoveText(0);
@@ -120,6 +130,8 @@ public class GameController : MonoBehaviour
         }
             if (TaskDisplayController.instance.spawnedText.Count == 1){
                 //Lost
+                isPause = true;
+                FinishController.instance.DisplayFinish(false,GameStatistics.instance.killCount, GameStatistics.instance.elapsedSeconds);
                 return;
             }
             TaskDisplayController.instance.RemoveText(0);
@@ -144,10 +156,10 @@ public class GameController : MonoBehaviour
         GameObject go;
         foreach (PlayerInfo pi in pInfo)
         {
-            if (CheckMainPlayer(pi.playerId)){
-                mainPlayer.SetPlayerInfo(pi);
-                continue;
-            }
+            // if (CheckMainPlayer(pi.playerId)){
+            //     mainPlayer.SetPlayerInfo(pi);
+            //     continue;
+            // }
             if (pi.isBot){
                 go = Instantiate(prefabBotPlayer);
                 playerControllers.Add(go.GetComponent<EnemyAI>());

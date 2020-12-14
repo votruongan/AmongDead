@@ -16,12 +16,12 @@ public class KillActionController : MonoBehaviour
     {
         killablePlayers = new List<PlayerController>();
         killButtonDisplay = killButtonDisplayCotroller;
-        mainIsImpostor = this.transform.parent.gameObject.GetComponent<MainPlayerController>().info.isImpostor;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         // Debug.Log(other.name);
+        mainIsImpostor = this.transform.parent.gameObject.GetComponent<MainPlayerController>().info.isImpostor;
         VisibleInsight vi = other.gameObject.GetComponent<VisibleInsight>();
         if ( MainPlayerController.instance.isVenting || other.name == "MainPlayer" || (vi != null && !vi.isInPlayerSight)
             || (other.transform.parent && other.transform.parent.gameObject.name == "MainPlayer")) return;
