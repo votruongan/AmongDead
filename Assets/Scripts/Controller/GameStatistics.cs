@@ -29,6 +29,7 @@ public class GameStatistics : MonoBehaviour
             if (!GameController.isPause){
                 yield return new WaitForSeconds(1.0f);
                 elapsedSeconds ++;
+                continue;
             }
             yield return new WaitForSeconds(1.0f);
             if (FinishController.isGameFinished) break;
