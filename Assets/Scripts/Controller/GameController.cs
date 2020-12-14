@@ -72,7 +72,7 @@ public class GameController : MonoBehaviour
         if (gameMode == 1){
             TaskDisplayController.instance.RemoveText(0);
             TaskDisplayController.instance.AddNormalText(StringUtils.ExecTemplate(StringTemplate.LoneWolf_Task,GameStatistics.instance.killCount.ToString()), Color.white);
-            if (GameStatistics.instance.killCount == 5){
+            if (GameStatistics.instance.killCount == 10){
                 isPause = true;
                 FinishController.instance.DisplayFinish(true,GameStatistics.instance.killCount, GameStatistics.instance.elapsedSeconds);
             }
@@ -170,7 +170,7 @@ public class GameController : MonoBehaviour
             }
             playerControllers[playerControllers.Count - 1].SetPlayerInfo(pi);            
         }
-        mainPlayer.SetPlayerName(ImmortalInfoHolder.GetString("PlayerName"));
+        mainPlayer.SetPlayerName(PlayerPrefs.GetString("PlayerName","test"));
         DelayStarter.instance.StartCounting();
     }
 

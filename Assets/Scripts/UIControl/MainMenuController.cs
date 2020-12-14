@@ -44,6 +44,7 @@ public class MainMenuController : MonoBehaviour
         kva.AddPair("name", name);
         serverCom.SendRequest("SET_NAME", kva.ToArray());
         ImmortalInfoHolder.AddString("PlayerName", name);
+        PlayerPrefs.SetString("PlayerName",name);
         return true;
     }
 
@@ -95,9 +96,13 @@ public class MainMenuController : MonoBehaviour
         serverCom.SendRequest("JOIN_ROOM", kva.ToArray());
     }
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-
+        string s = PlayerPrefs.GetString("PlayerName","");
+        Debug.Log("pname " + s);
+        if (s != ""){
+            playerNameInput.text = s;
+        }
     }
 
     // Update is called once per frame

@@ -25,6 +25,13 @@ public class FinishController : MonoBehaviour
 
     public void DisplayFinish(bool isWin, int killCount, int secondCount){
         isGameFinished = true;
+        string s = (GameController.instance.gameMode == 1)?("LW"):("CTS");
+        int k = PlayerPrefs.GetInt(s+"_Kill",0);
+        int t = PlayerPrefs.GetInt(s+"_Time",281020);
+        if (killCount > k || (killCount == k && secondCount < t)){
+            PlayerPrefs.SetInt(s+"_Kill",killCount);
+            PlayerPrefs.SetInt(s+"_Time",secondCount);
+        }
         killText.text = "Your Kill: " + killCount.ToString();
         timeText.text = "Time Elapsed: " + ((int)secondCount/60).ToString() + ":" + (secondCount%60).ToString();
         gameObject.SetActive(true);

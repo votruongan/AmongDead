@@ -102,7 +102,7 @@ public class EnemyAI : PlayerController
     protected void FixedUpdate()
     {
         base.FixedUpdate();
-        if (path == null || GameController.isPause)
+        if (path == null || GameController.isPause || target == null)
         {
             return;
         }
@@ -120,6 +120,7 @@ public class EnemyAI : PlayerController
         if (lastDistance == tmpDistance){
             // Debug.Log("Stuck " + tmpDistance.ToString());
             lastDistance = -1.0f;
+            // target = null;
         }
         if (gameMode == 11){
             float targetDist = Vector2.Distance(rb.position, target.position);

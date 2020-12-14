@@ -47,6 +47,7 @@ public class PanelChangeController : MonoBehaviour
     public void GotoGameMulti(int gameMode){
         
     }
+    public GameObject PanelHighScore;
     public GameObject PanelGameIntro;
     public void ReadGameIntro(bool val){
         if (!val){
@@ -56,6 +57,15 @@ public class PanelChangeController : MonoBehaviour
         }
         PanelGameIntro.SetActive(true);
         MenuPanels[0].SetActive(false);
+    }
+    public void ReadHighScore(bool val){
+        if (!val){
+            PanelHighScore.SetActive(false);
+            MenuPanels[1].SetActive(true);
+            return;
+        }
+        PanelHighScore.SetActive(true);
+        MenuPanels[1].SetActive(false);
     }
     public void GotoPanel(int index)
     {

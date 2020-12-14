@@ -42,6 +42,7 @@
      <Compile Include="Assets\BotScriptController.cs" />
      <Compile Include="Assets\FieldOfView\Scripts\FieldOfView.cs" />
      <Compile Include="Assets\FinishController.cs" />
+     <Compile Include="Assets\HighScoreLoader.cs" />
      <Compile Include="Assets\ImpostorAI.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />

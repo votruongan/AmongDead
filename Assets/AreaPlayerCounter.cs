@@ -17,6 +17,7 @@ public class AreaPlayerCounter : MonoBehaviour
         captureProgress = GameObject.Find("Progess_Tasks").GetComponent<Slider>();
         if (GameController.instance.gameMode != 2) {
             this.gameObject.SetActive(false);
+            captureProgress.gameObject.SetActive(false);
         }
     }
     private void OnTriggerEnter2D(Collider2D other) {
@@ -34,7 +35,8 @@ public class AreaPlayerCounter : MonoBehaviour
         string n = other.gameObject.name.ToLower();
         if (!n.Contains("player")) return;
         if (other.gameObject.GetComponent<MainPlayerController>() != null){
-            
+            isMainPlayerInside = false;
+            captureProgress.value = 0.0f;
         }
         if (other.gameObject.GetComponent<PlayerController>().info.isImpostor)
             teamBalance++;
